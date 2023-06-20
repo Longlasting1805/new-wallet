@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import imgUrl from './assets/ygt.JPG'
+import imgUrl from './assets/IMG_1537.JPG'
 
 export const Register = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
-    const [name, setName] = useState('');
+    const [firstname, setFirstName] = useState('');
+    const [lastname, setLastName] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -13,16 +14,16 @@ export const Register = (props) => {
 
     return (
         <div className="auth-form-container">
-                <div className="img"><img src={imgUrl}alt="Italian Trulli"/></div>
+                <div className="img"><img src={imgUrl}alt="Trulli"/></div>
         
             <div className="form">
                 <h2>Welcome!</h2>
                 <p>Sign up by entering the information below</p>
                 <form  className="register-form"  onSubmit={handleSubmit}>
-                    <label htmlFor="name">First name</label>
-                    <input value={name} name="name" id="name" placeholder="First name"/>
-                    <label htmlFor="name">Last name</label>
-                    <input value={name} name="name" id="name" placeholder="Last name"/>
+                    <label htmlFor="firstname">First name</label>
+                    <input value={firstname}  onChange={(e) => setFirstName(e.target.value)} name="name" id="name" placeholder="First name"/>
+                    <label htmlFor="lastname">Last name</label>
+                    <input value={lastname}  onChange={(e) => setLastName(e.target.value)} name="name" id="name" placeholder="Last name"/>
                     <label htmlFor="email">email</label>
                     <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="ken@gmail.com" id="email" name="email"/>
                     <label htmlFor="password">password</label>
