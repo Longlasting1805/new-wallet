@@ -18,6 +18,12 @@
   flex-direction: column;
   
 }
+.img,.form{
+  width: 40%;
+}
+.img > img{
+  width: 100%;
+}
 
 @media screen and (min-width: 600px){
   .auth-form-container{
@@ -28,6 +34,12 @@
   
   }
 
+  .img{
+    /* display: none; */
+  }
+  .img,.form{
+    /* width: 100%; */
+  }
 }
 
 

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import imgUrl from './assets/ygt.JPG'
 
 export const Login = (props) => {
     const [email, setEmail] = useState('');
@@ -13,6 +14,9 @@ export const Login = (props) => {
 
     return (
         <div className="auth-form-container">
+            <div className="img"><img src={imgUrl}alt="Italian Trulli"/></div>
+            
+            <div className="form">
             <h2>Welcome Back!</h2>
             <p>Login in to your Dashboad</p>
             <form className="login-form" onSubmit={handleSubmit}>
@@ -23,6 +27,8 @@ export const Login = (props) => {
                 <button>Login</button>
             </form>
             <button className="link-btn" onClick={() => props.onFormSwitch('register')}> Don't have an account? Register.</button>
+            </div>
+           
         </div>
     )
 }
