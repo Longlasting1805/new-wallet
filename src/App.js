@@ -5,7 +5,8 @@ import { Login } from './Login';
 import { Register } from "./Register";
 import { Forgot } from "./Forgotpassword";
 import {Routes, Route} from 'react-router-dom'
-// import { Register } from './Register';
+import { Otp } from './Otp';
+
 
 function App() {
   // const [currentForm, setCurrentForm] = useState('login')
@@ -15,14 +16,14 @@ function App() {
   // }
   return (
     <div className="App">
-       {/* {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-       } */}
+      
        <Routes>
        <Route path="/" element={<Login />}/>
        <Route path="/login" element={<Login />}/>
        <Route path="/register" element={<Register />}/>
        <Route path="/forgot" element={<Forgot />}/>
+       <Route path="/otp" element={<Otp />}/>
+       
        
        </Routes>
 
