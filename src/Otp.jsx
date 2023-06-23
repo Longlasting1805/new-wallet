@@ -2,10 +2,30 @@ import React, { useState } from "react";
 import imgUrl from './assets/ygt.JPG';
 import { useNavigate } from "react-router-dom";
 import { MuiOtpInput } from 'mui-one-time-password-input'
+import Modal from '@mui/material/Modal';
+import { Box, Typography } from "@mui/material";
 
 
-export const Otp = (props) => {
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
+
+export const Otp = (props, text) => {
     const [otp, setOtp] = useState('');
+    
+    
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,14 +44,24 @@ export const Otp = (props) => {
               <img src={imgUrl}alt="Italian Trulli"/>
             </div>
            <div>
-            <p style={{ marginLeft: '10rem'}}> Enter your otp number</p>
+            <p style={{ marginLeft: '2rem', marginBottom: '-1rem'}}> Enter your OTP number</p>
                 {/* <label htmlFor="otp" style={{ marginLeft: '5rem', marginBottom: '5rem'}}> otp</label> */}
                  <div className="otp">
-                    <MuiOtpInput value={otp} onChange={handleChange} style={{ width: '300px'}}/>
+                    <MuiOtpInput TextFieldsProps={{ size: 'small', placeholder: '-', type: 'password' }}  value={otp} onChange={handleChange} style={{ width: '300px'}}/>
                 </div>
 
                 <div style={{width: '48rem', }}>
-                  <button style={{width: '15rem', marginTop: '1rem', color: '#7439bd'}}> Continue</button>
+                  <button style={{width: '15rem', marginTop: '1rem', color: '#7439bd'}} onClick={handleOpen}> Continue</button>
+                  <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                >
+                <Box sx={style}>
+                    Your Account has been Successfully Verified
+                </Box>
+             </Modal>
                 </div>
                    
            </div>
