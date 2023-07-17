@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import imgUrl from './assets/ygt.JPG'
+import imgUrl from './assets/webpix.jpg'
 import {Checkbox} from '@mui/material';
 import { useNavigate } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import imgUrl from './assets/ygt.JPG'
+import imgUrl from './assets/forgot.jpg'
 import { useNavigate } from "react-router-dom";
 import Modal from '@mui/material/Modal';
 import { Box, Typography } from "@mui/material";

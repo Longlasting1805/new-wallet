@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import imgUrl from './assets/ygt.JPG';
+import imgUrl from './assets/webpix1.jpg';
 import { useNavigate } from "react-router-dom";
 import { MuiOtpInput } from 'mui-one-time-password-input'
 import Modal from '@mui/material/Modal';
