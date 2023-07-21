@@ -12,11 +12,13 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: 300,
+    height:'100px',
+    borderRadius:'8px',
     bgcolor: 'background.paper',
-    border: '2px solid #000',
+    // border: '2px solid #000',
     boxShadow: 24,
-    p: 4,
+    p:2
   };
 
 export const Otp = (props, text) => {
@@ -57,9 +59,11 @@ export const Otp = (props, text) => {
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
+                sx={{borderRadius:"5px"}}
                 >
                 <Box sx={style}>
                     Your Account has been Successfully Verified
+                    <button className="otp-continue" onClick={handleOpen}> continue</button>
                 </Box>
              </Modal>
                 </div>

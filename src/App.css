@@ -6,7 +6,7 @@
   justify-content: center;
   /* overflow-y: hidden; */
   color: white;
-  background-image: linear-gradient(79deg, #7439bd, #C66FBC 48%, #F7944D);
+  background-image: linear-gradient(79deg, #ffffff, #f0eaef 48%, #2e0f0f);
 }
 
 .auth-form-container{
@@ -152,6 +152,10 @@ button{
   display: flex;
   justify-content: flex-end;
   
+}
+
+.otp-continue{
+  margin-left: 60%;
 }
 
 

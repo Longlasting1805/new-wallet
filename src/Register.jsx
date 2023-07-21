@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import imgUrl from './assets/webpix1.jpg'
 import Modal from '@mui/material/Modal';
 import { Box, Typography } from "@mui/material";
@@ -63,7 +63,7 @@ export const Register = (props) => {
                             for Account verification
                 </Box>
              </Modal>
-                </form>
+            </form>
 
                
                 <button className="link-btn" onClick={() => navigate('/login')}> Already have an account? Login.</button>
