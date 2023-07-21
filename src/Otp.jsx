@@ -63,7 +63,7 @@ export const Otp = (props, text) => {
                 >
                 <Box sx={style}>
                     Your Account has been Successfully Verified
-                    <button className="otp-continue" onClick={handleOpen}> continue</button>
+                    <button className="otp-continue" onClick={() => navigate('/Completeregistration')}> continue</button>
                 </Box>
              </Modal>
                 </div>
