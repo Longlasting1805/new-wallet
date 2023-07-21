@@ -16,7 +16,7 @@ export const Completeregistration = (props) => {
             <img src={imgUrl}alt="Italian Trulli"/>
         </div>
 
-        <div>
+        <div className="select-identification">
             <p>KYC</p>
             <h1>Select a Form of Identification</h1>
         <FormControl fullWidth>
