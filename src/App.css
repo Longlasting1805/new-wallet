@@ -111,6 +111,7 @@ button{
 .img{
   height: 100%;
   width: 50%;
+  margin-right: 40px;
 }
 .img img{
   width: 300px;
@@ -163,10 +164,11 @@ button{
 }
 
 .select-identification{
-  display: flex;
+  display: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 350px;
 }
 
 .kyc{
@@ -179,15 +181,25 @@ button{
 
 .select-class{
   margin-right: 40%;
+  display: inline;
 }
 
 .kindly{
   margin-left: 100px;
+  display: auto;
  
 }
 
 .cards{
   margin-right: 80%
+}
+
+.plus{
+  margin-bottom: auto;
+}
+
+.carding{
+  margin-right: 30%;
 }
 
 

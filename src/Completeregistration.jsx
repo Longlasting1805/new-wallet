@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import imgUrl from './assets/com.jpg'
 import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
+import {BiPlus} from 'react-icons/bi'
 
 
 
@@ -28,7 +29,7 @@ export const Completeregistration = (props) => {
 
             <p className="kyc">KYC</p>
             <FormControl fullWidth>
-                <p className="select-class">select a form of identification</p>
+                <p className="select-class">Select a Form of Identification</p>
                 <InputLabel onChange={(e) => setNin(e.target.value)} id="demo-simple-select-label" placeholder="nin"></InputLabel>
                 <InputLabel onChange={(e) => setDriversLicence(e.target.value)} id="demo-simple-select-label" placeholder="drivers licence"></InputLabel>
                 <InputLabel onChange={(e) => setVotersCard(e.target.value)} id="demo-simple-select-label" placeholder="voters card"></InputLabel>
@@ -52,7 +53,17 @@ export const Completeregistration = (props) => {
 
             <div className="cards">
             <p>Add Cards</p>
+            
+           
             </div>
+            <BiPlus className="plus"/>
+            <div className="carding">
+            <input className="Cardname" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Card Name"/>
+            <input className="Cardnumber" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Card Number"/>
+            <input className="Expdate" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Exp.Date"/>
+            <input className="cvv" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="CVV"/>
+            </div>
+          
         </div>
 
     </div>

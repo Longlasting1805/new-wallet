@@ -1,4 +1,4 @@
- import React, { useState } from "react";
+import React, { useState } from "react";
 import imgUrl from './assets/webpix1.jpg'
 import Modal from '@mui/material/Modal';
 import { Box, Typography } from "@mui/material";
