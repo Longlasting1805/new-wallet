@@ -11,6 +11,10 @@ export const Completeregistration = (props) => {
     const [driverslicence, setDriversLicence] = useState('');
     const [voterscard, setVotersCard] = useState('');
     const [homeaddress, setHomeAdress] = useState('');
+    const [cardnumber, setCardNumber] = useState('');
+    const [cardname, setCardName] = useState('');
+    const [expdate, setExpDate] = useState('');
+    const [cvv, setCvv] = useState('');
     const handleChange = (e) =>{
         e.preventDefault()
     }
@@ -51,17 +55,19 @@ export const Completeregistration = (props) => {
             <input className="homeaddress" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Home Address"/>
             </div>
 
-            <div className="cards">
+        <div className="cards">
             <p>Add Cards</p>
             
-           
+            <div className="plus">
+            <BiPlus />
             </div>
-            <BiPlus className="plus"/>
+        </div>
+           
             <div className="carding">
-            <input className="Cardname" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Card Name"/>
-            <input className="Cardnumber" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Card Number"/>
-            <input className="Expdate" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Exp.Date"/>
-            <input className="cvv" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="CVV"/>
+                <input className="Cardname" value={cardname}  onChange={(e) => setCardName(e.target.value)} placeholder="Card Name"/>
+                <input className="Cardnumber" value={cardnumber}  onChange={(e) => setCardNumber(e.target.value)} placeholder="Card Number"/>
+                <input className="Expdate" value={expdate}  onChange={(e) => setExpDate(e.target.value)} placeholder="Exp.Date"/>
+                <input className="cvv" value={cvv}  onChange={(e) => setCvv(e.target.value)} placeholder="CVV"/>
             </div>
           
         </div>
