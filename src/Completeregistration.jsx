@@ -7,17 +7,26 @@ import {BiPlus} from 'react-icons/bi'
 
 export const Completeregistration = (props) => {
 
-    const [nin, setNin] = useState('');
-    const [driverslicence, setDriversLicence] = useState('');
-    const [voterscard, setVotersCard] = useState('');
+    const [selectValues, setSelectValues] = useState({
+        nin: "",
+        driverslicence: "",
+        voterscard: ""
+    })
+    const [nine, setNine] = useState('');
+    // const [driverslicence, setDriversLicence] = useState('');
+    // const [voterscard, setVotersCard] = useState('');
     const [homeaddress, setHomeAdress] = useState('');
     const [cardnumber, setCardNumber] = useState('');
     const [cardname, setCardName] = useState('');
     const [expdate, setExpDate] = useState('');
     const [cvv, setCvv] = useState('');
-    const handleChange = (e) =>{
-        e.preventDefault()
-    }
+    // const handleChange = (e) => {
+    //     setSelectValues({...selectValues,  name:e.target.value})
+    //   };
+
+    const handleChange = (e) => {
+        setNine(e.target.value)
+      };
     return(
 
     <div className="root-div">
@@ -32,21 +41,22 @@ export const Completeregistration = (props) => {
         </div>
 
             <p className="kyc">KYC</p>
-            <FormControl fullWidth>
+            <FormControl fullWidth sx={{marginLeft: "5rem"}}>
                 <p className="select-class">Select a Form of Identification</p>
-                <InputLabel onChange={(e) => setNin(e.target.value)} id="demo-simple-select-label" placeholder="nin"></InputLabel>
-                <InputLabel onChange={(e) => setDriversLicence(e.target.value)} id="demo-simple-select-label" placeholder="drivers licence"></InputLabel>
-                <InputLabel onChange={(e) => setVotersCard(e.target.value)} id="demo-simple-select-label" placeholder="voters card"></InputLabel>
+                <InputLabel onChange={(e) => setSelectValues({...selectValues, nin:e.target.value})} id="demo-simple-select-label" placeholder="nin"></InputLabel>
+                <InputLabel onChange={(e) => setSelectValues({...selectValues, driverslicence:e.target.value})} id="demo-simple-select-label" placeholder="drivers licence"></InputLabel>
+                <InputLabel onChange={(e) => setSelectValues({...selectValues, voterscard:e.target.value})} id="demo-simple-select-label" placeholder="voters card"></InputLabel>
                 <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={nin}
-                    label="Nin"
+                
+                    id="nin"
+                    value={nine}
+                    label="Options"
                     onChange={handleChange}
+                    sx={{color: "White", marginTop:"2rem", marginLeft:"5rem",width:"300px", marginBottom:"1rem"}}
                 >
-                    <MenuItem value={nin}>Nin</MenuItem>
-                    <MenuItem value={driverslicence}>Drivers licence</MenuItem>
-                    <MenuItem value={voterscard}>Voters card</MenuItem>
+                    <MenuItem value={"Nin"}>Nin</MenuItem>
+                    <MenuItem value={"Drivers licence"}>Drivers licence</MenuItem>
+                    <MenuItem value={"Voters card"}>Voters card</MenuItem>
                 
                 </Select>
                
@@ -56,11 +66,8 @@ export const Completeregistration = (props) => {
             </div>
 
         <div className="cards">
-            <p>Add Cards</p>
-            
-            <div className="plus">
-            <BiPlus />
-            </div>
+            <p className="p-tag"> Add Cards</p>
+            <BiPlus size={20} style={{marginLeft: "10rem", cursor: "pointer"}}/>
         </div>
            
             <div className="carding">
@@ -69,9 +76,10 @@ export const Completeregistration = (props) => {
                 <input className="Expdate" value={expdate}  onChange={(e) => setExpDate(e.target.value)} placeholder="Exp.Date"/>
                 <input className="cvv" value={cvv}  onChange={(e) => setCvv(e.target.value)} placeholder="CVV"/>
             </div>
-          
-        </div>
+            <a href="/next" className="next" >Next</a>
 
+        </div>
+       
     </div>
     )
 
