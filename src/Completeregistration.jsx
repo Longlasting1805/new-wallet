@@ -42,6 +42,7 @@ export const Completeregistration = (props) => {
         <div className="select-identification">
         <div className="kindly">
             <p>Kindly Complete your Registration</p>
+            <hr className="line"></hr>
         </div>
 
             <p className="kyc">KYC</p>
@@ -69,6 +70,7 @@ export const Completeregistration = (props) => {
             <input className="homeaddress" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Home Address"/>
             </div>
 
+            <hr className="lining"></hr>
         <div className="cards">
             <p className="p-tag"> Add Cards</p>
             <BiPlus size={20} style={{marginLeft: "10rem", cursor: "pointer"}}/>
