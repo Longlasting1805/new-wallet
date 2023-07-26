@@ -7,7 +7,7 @@ import { Forgot } from "./Forgotpassword";
 import {Routes, Route} from 'react-router-dom'
 import { Otp } from './Otp';
 import { Completeregistration } from "./Completeregistration";
-import {}
+import { Moredetails } from "./Moredetails"
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
        <Route path="/forgot" element={<Forgot />}/>
        <Route path="/otp" element={<Otp />}/>
        <Route path="/completeregistration" element={<Completeregistration />}/>
+       <Route path="/moredetails" element={<Moredetails />}/>
              
        
        

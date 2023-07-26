@@ -223,4 +223,21 @@ input{
   margin-left: 10rem;
 }
 
+.image{
+  height: 50%;
+  width: 50%;
+}
+.image img{
+  height: 10%;
+  width: 100%;
+}
+
+.root{
+  display: flex;
+}
+
+.details{
+  width: 50%;
+}
+
 
