@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import imgUrl from './assets/com.jpg'
+import { useNavigate } from "react-router-dom";
 
 export const Moredetails = (props) => {
 
@@ -13,6 +14,8 @@ export const Moredetails = (props) => {
         e.preventDefault();
        
     }
+
+    const navigate = useNavigate()
 
       return(
         <div className="root">
@@ -35,7 +38,7 @@ export const Moredetails = (props) => {
             </div>
             <button className="continue">Continue</button>
             <div className="prev">
-            <a href="/prev" className="next" >Prev</a>
+            <a href="" onClick={() => navigate('/completeregistration')} className="prev" >Prev</a>
             </div>
             
             </div>

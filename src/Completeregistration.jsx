@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import imgUrl from './assets/com.jpg'
 import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 import {BiPlus} from 'react-icons/bi'
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -27,6 +28,9 @@ export const Completeregistration = (props) => {
     const handleChange = (e) => {
         setNine(e.target.value)
       };
+
+      const navigate = useNavigate()
+
     return(
 
     <div className="root-div">
@@ -76,7 +80,7 @@ export const Completeregistration = (props) => {
                 <input className="Expdate" value={expdate}  onChange={(e) => setExpDate(e.target.value)} placeholder="Exp.Date"/>
                 <input className="cvv" value={cvv}  onChange={(e) => setCvv(e.target.value)} placeholder="CVV"/>
             </div>
-            <a href="/next" className="next" >Next</a>
+            <a href="" onClick={() => navigate('/moredetails')} className="next" >Next</a>
 
         </div>
        
