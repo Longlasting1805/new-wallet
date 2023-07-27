@@ -40,12 +40,12 @@ export const Login = (props) => {
                <a href="/forgot" className="forgetp" >Forgot Password</a>
             <div className="remember">               
     <Checkbox {...label} defaultChecked/>
-                <p>Remember Me</p>
+                <p className="remember-box">Remember Me</p>
                 </div>
                </div>
-                <button>Login</button>
+                <button className="login-btn">Login</button>
             </form>
-            <button className="link-btn" onClick={() => navigate('/register')}> Don't have an account? Register.</button>
+            <a href="url" className="dont-have-acc-btn" onClick={() => navigate('/register')}>Don't have an account? Register</a>
         
           </div>
               </div>

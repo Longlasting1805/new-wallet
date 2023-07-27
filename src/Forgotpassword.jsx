@@ -44,7 +44,7 @@ return(
         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email Address" id="email" name="email"/>
         <button onClick={handleOpen}>Next</button>
        
-        <button className="link-btn" onClick={() => navigate('/login')}> cancel</button>
+        <button className="cancel-btn" onClick={() => navigate('/login')}> cancel</button>
 
          <Modal
                 open={open}

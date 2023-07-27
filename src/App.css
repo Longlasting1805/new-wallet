@@ -102,12 +102,12 @@ button{
 }
 .remember{
   display: flex;
+  margin-right: 18%;
 }
 .link-btn{
   background: none;
   color: white;
   text-decoration: underline;
-  margin-left: 14rem;
 }
 .img{
   height: 100%;
@@ -279,5 +279,19 @@ input{
   margin-right: 31%;
 }
 
+.login-btn{
+  width: 85%;
+}
+
+.remember-box{
+  margin-left: -8px;
+}
+
+.dont-have-acc-btn{
+  margin-right: 15%;
+  position: relative;
+  top: 10px;
+  
+}
 
 
