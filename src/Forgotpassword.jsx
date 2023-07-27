@@ -40,8 +40,8 @@ return(
         </div>
          <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '10rem', marginTop: '15rem'}}>
         
-        <label htmlFor="email">Enter Email to reset your Password</label>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="ken@gmail.com" id="email" name="email"/>
+        <label htmlFor="email">Enter Email Address to reset Password</label>
+        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email Address" id="email" name="email"/>
         <button onClick={handleOpen}>Next</button>
        
         <button className="link-btn" onClick={() => navigate('/login')}> cancel</button>
