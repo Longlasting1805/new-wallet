@@ -19,8 +19,8 @@ export const Moredetails = (props) => {
 
       return(
         <div className="root">
-            <div className="image">
-            <img src={imgUrl}alt="Italian Trulli"/>
+            <div className="details-div">
+            <img className="details-img" src={imgUrl}alt="Italian Trulli"/>
             </div>
 
             

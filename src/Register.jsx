@@ -36,7 +36,9 @@ export const Register = (props) => {
 
     return (
         <div className="auth-form-container">
-                <div className="img"><img src={imgUrl}alt="Trulli"/></div>
+                <div className="register-div">
+                    <img className="register-img" src={imgUrl}alt="Trulli"/>
+                </div>
 
         
             <div className="form">

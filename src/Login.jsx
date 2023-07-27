@@ -22,7 +22,9 @@ export const Login = (props) => {
 
     return (
         <div className="auth-form-container">
-            <div className="img"><img src={imgUrl}alt="Italian Trulli"/></div>
+            <div className="login-div">
+                <img className="login-img" src={imgUrl}alt="Italian Trulli"/>
+            </div>
 
             <div className="form">
           
@@ -45,7 +47,7 @@ export const Login = (props) => {
                </div>
                 <button className="login-btn">Login</button>
             </form>
-            <a href="url" className="dont-have-acc-btn" onClick={() => navigate('/register')}>Don't have an account? Register</a>
+            <a href="" className="dont-have-acc-btn" onClick={() => navigate('/register')}>Don't have an account? Register</a>
         
           </div>
               </div>

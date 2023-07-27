@@ -35,8 +35,8 @@ const navigate = useNavigate()
 
 return(
     <div style={{ display: 'flex', width: '100%', height: '670px'}}>
-        <div className="img">
-        <img src={imgUrl}alt="Italian Trulli"/>
+        <div className="forgot-div">
+        <img className="forgot-img" src={imgUrl}alt="Italian Trulli"/>
         </div>
          <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '10rem', marginTop: '15rem'}}>
         
@@ -44,7 +44,7 @@ return(
         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email Address" id="email" name="email"/>
         <button onClick={handleOpen}>Next</button>
        
-        <button className="cancel-btn" onClick={() => navigate('/login')}> cancel</button>
+        <a href="" className="cancel-link" onClick={() => navigate('/login')} >cancel</a>
 
          <Modal
                 open={open}

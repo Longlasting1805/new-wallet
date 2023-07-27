@@ -42,8 +42,8 @@ export const Otp = (props, text) => {
 
     return(
         <div className="otp-form">
-            <div className="otp-img">
-              <img src={imgUrl}alt="Italian Trulli"/>
+            <div className="otp-div">
+              <img className="otp-img" src={imgUrl}alt="Italian Trulli"/>
             </div>
            <div>
             <p style={{ marginLeft: '2rem', marginBottom: '-1rem'}}> Enter your OTP number</p>
