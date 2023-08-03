@@ -26,32 +26,30 @@ export const Login = (props) => {
                 <img className="login-img" src={imgUrl}alt="Italian Trulli"/>
             </div>
 
-            <div className="form">
-          
-          
-          <div className="formchild">
-          <h2>Welcome Back!</h2>
-            <p>Login in to your Dashboad</p>
-            <form className="login-form" onSubmit={handleSubmit}>
-                <label htmlFor="email">email</label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="ken@gmail.com" id="email" name="email"/>
-                <label htmlFor="password">password</label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password"/>
+        <div className="form">
+            <div className="formchild">
+                <h2>Welcome Back!</h2>
+                    <p>Login in to your Dashboad</p>
+                    <form className="login-form" onSubmit={handleSubmit}>
+                        <label htmlFor="email">email</label>
+                        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="ken@gmail.com" id="email" name="email"/>
+                        <label htmlFor="password">password</label>
+                        <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password"/>
 
-               <div style={{ display: 'flex'}} className="forgot-and-rem">
-               <a href="/forgot" className="forgetp" >Forgot Password</a>
-            <div className="remember">               
-    <Checkbox {...label} defaultChecked/>
-                <p className="remember-box">Remember Me</p>
-                </div>
-               </div>
-                <button className="login-btn">Login</button>
-            </form>
-            <a href="" className="dont-have-acc-btn" onClick={() => navigate('/register')}>Don't have an account? Register</a>
+                    <div style={{ display: 'flex'}} className="forgot-and-rem">
+                    <a href="/forgot" className="forgetp" >Forgot Password</a>
+                   <div className="remember">               
+                        <Checkbox {...label} defaultChecked/>
+                        <p className="remember-box">Remember Me</p>
+                    </div>
+                    </div>
+                        <button className="login-btn">Login</button>
+                    </form>
+                    <a href="" className="dont-have-acc-btn" onClick={() => navigate('/register')}>Don't have an account? Register</a>
         
-          </div>
-              </div>
+            </div>
+        </div>
            
         </div>
     )
-}
+}   

@@ -31,16 +31,20 @@
 } */
 .form{
   width: 50%;
-  /* height: 40%; */
+  height: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+  
   
 }
 .formchild{
   width: 90%;
-  height: 17%;
+  height: 250%;
+  margin-left: 10px;
+  
   
 
 }
@@ -105,7 +109,7 @@ button{
 }
 .remember{
   display: flex;
-  margin-right: 18%;
+  margin-right: 35%;
 }
 .link-btn{
   background: none;
@@ -284,11 +288,11 @@ input{
 }
 
 .login-btn{
-  width: 85%;
+  width: 69%;
 }
 
 .remember-box{
-  margin-left: -8px;
+  margin-left: -9px;
 }
 
 .dont-have-acc-btn{
@@ -301,7 +305,8 @@ input{
 .login-img{
   width: 80%;
   height: 110%;
-  display: flex;
+  /* display: flex; */
+  float: left;
 }
 
 .register-img{
