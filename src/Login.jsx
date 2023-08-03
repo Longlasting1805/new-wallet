@@ -1,55 +1,79 @@
-import React, {useState} from "react";
-import imgUrl from './assets/webpix.jpg'
-import {Checkbox} from '@mui/material';
+import React, { useState } from "react";
+import imgUrl from "./assets/webpix.jpg";
+import { Checkbox } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-
-const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 export const Login = (props) => {
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
-    
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(email);
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email);
+  };
 
-    const navigate = useNavigate()
+  const navigate = useNavigate();
 
+  return (
+    <div className="auth-form-container">
+      <div className="login-div">
+        <img className="login-img" src={imgUrl} alt="Italian Trulli" />
+      </div>
 
+      <div className="form">
+        <div className="formchild">
+          <h2 className="welcome">Welcome Back!</h2>
+          <p className="login-dashboad">Log in to your Dashboad</p>
+          <form className="login-form" onSubmit={handleSubmit}>
+            {/* <label htmlFor="email">email</label> */}
+            <input
+              className="login-input"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              placeholder="ken@gmail.com"
+              id="email"
+              name="email"
+            />
+            {/* <label htmlFor="password">password</label> */}
+            <input
+              className="login-input"
+              value={pass}
+              onChange={(e) => setPass(e.target.value)}
+              type="password"
+              placeholder="********"
+              id="password"
+              name="password"
+            />
 
-    return (
-        <div className="auth-form-container">
-            <div className="login-div">
-                <img className="login-img" src={imgUrl}alt="Italian Trulli"/>
+            <div style={{ display: "flex" }} className="forgot-and-rem">
+              
+            <div className="remember">
+                <Checkbox {...label} defaultChecked />
+                <p className="remember-box">Remember Me</p>
+              </div>
+              
+              <a href="/forgot" className="forgotp">
+                Forgot Password
+              </a>
+             
             </div>
-
-        <div className="form">
-            <div className="formchild">
-                <h2>Welcome Back!</h2>
-                    <p>Login in to your Dashboad</p>
-                    <form className="login-form" onSubmit={handleSubmit}>
-                        <label htmlFor="email">email</label>
-                        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="ken@gmail.com" id="email" name="email"/>
-                        <label htmlFor="password">password</label>
-                        <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password"/>
-
-                    <div style={{ display: 'flex'}} className="forgot-and-rem">
-                    <a href="/forgot" className="forgetp" >Forgot Password</a>
-                   <div className="remember">               
-                        <Checkbox {...label} defaultChecked/>
-                        <p className="remember-box">Remember Me</p>
-                    </div>
-                    </div>
-                        <button className="login-btn">Login</button>
-                    </form>
-                    <a href="" className="dont-have-acc-btn" onClick={() => navigate('/register')}>Don't have an account? Register</a>
-        
-            </div>
-        </div>
+            <button className="login-btn">Login</button>
            
+          <div className="no-account">
+          <p
+           >
+            Don't have an account?
+          </p>
+          <p className="dont-have-acc-btn"
+            onClick={() => navigate("/register")}>Sign Up</p>
+          </div>
+          </form>
+          
         </div>
-    )
-}   
+      </div>
+    </div>
+  );
+};
