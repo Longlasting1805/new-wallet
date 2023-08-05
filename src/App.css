@@ -71,6 +71,15 @@
   margin-top: 20px;
 }
 
+.register-dashboard{
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  margin-top: 20px;
+
+}
+
 .login-input{
   outline: none;
   border: 1px solid #C4C4C4;
@@ -142,10 +151,11 @@ button{
   align-items: center;
 
 }
-.link-btn{
-  background: none;
-  color: white;
+.already-have-acc-btn{
+  color: #55229E;
   text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
 }
 /* .img{
   height: 100%;
@@ -160,6 +170,19 @@ button{
 .link-bttn{
   
 }
+
+.cancel-link{
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* color: #C4C4C4; */
+  margin-top: 10px;
+  margin-left: 260px;
+}
+
 .otp-form{
   /* width: 50%; */
   display: flex;
@@ -200,6 +223,17 @@ button{
 .root-div{
   display: flex;
   justify-content: space-between;
+}
+
+.forgot-container{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 295vw;
+  height: 100vh;
+  /* margin: auto; */
+  /* overflow-y: hidden; */
 }
 
 .select-identification{
@@ -366,13 +400,85 @@ line-height: normal;
 }
 
 .register-img{
-  width: 72%;
-  height: 12%;
+  width: 100%;
+  height: 100%;
+}
+
+.register-input{
+  width: 355px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+border: 1.511px solid #C4C4C4;
+background: #FFF;
+  
+}
+
+.signup-btn{
+  width: 100%;
+  border-radius: 13.618px;
+  border: 1.702px solid #56229E;
+  background: #55229E;
+  margin-top: 15px;
+  color: #FFF;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .forgot-img{
-  height: 100%;
   width: 125%;
+  height: 100%;
+}
+
+.forgot-pass{
+  width: 60%;
+  /* height: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  background: #ffffff;
+
+}
+
+.forgot-label{
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  margin-top: 20px;
+}
+
+.forgot-input{
+  outline: none;
+  border: 1px solid #C4C4C4;
+  width: 40%;
+}
+
+.forgot-btn{
+  width: 40%;
+  border-radius: 13.618px;
+  border: 1.702px solid #56229E;
+  background: #55229E;
+  margin-top: 15px;
+  color: #FFF;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.forgot-div{
+  height: 100vh;
+  width: 40;
 }
 
 .forgotp{
@@ -408,6 +514,13 @@ text-decoration: none;
   color: #C4C4C4;
   margin-top: 10px;
 }
+
+.register-div{
+  height: 100vh;
+  width: 50%;
+}
+
+
 
 
 

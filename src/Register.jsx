@@ -42,18 +42,25 @@ export const Register = (props) => {
 
         
             <div className="form">
-                <h2>Welcome!</h2>
-                <p>Sign up by entering the information below</p>
+                <h2 className="welcome">Welcome!</h2>
+                <p className="register-dashboard">Sign up by entering the information below</p>
                 <form  className="register-form"  onSubmit={handleSubmit}>
-                    <label htmlFor="firstname">First name</label>
-                    <input value={firstname}  onChange={(e) => setFirstName(e.target.value)} name="name" id="name" placeholder="First name"/>
-                    <label htmlFor="lastname">Last name</label>
-                    <input value={lastname}  onChange={(e) => setLastName(e.target.value)} name="name" id="name" placeholder="Last name"/>
-                    <label htmlFor="email">email</label>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="ken@gmail.com" id="email" name="email"/>
-                    <label htmlFor="password">password</label>
-                    <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password"/>
-                    <button onClick={handleOpen}> Sign Up</button>
+                    {/* <label htmlFor="firstname">First name</label> */}
+                    <input className="register-input" value={firstname}  onChange={(e) => setFirstName(e.target.value)} name="name" id="name" placeholder="First Name:"/>
+                    {/* <label htmlFor="lastname">Last name</label> */}
+                    <input className="register-input" value={lastname}  onChange={(e) => setLastName(e.target.value)} name="name" id="name" placeholder="Last Name:"/>
+                    {/* <label htmlFor="email">email</label> */}
+                    <input className="register-input"  value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email:" id="email" name="email"/>
+                    {/* <label htmlFor="password">password</label> */}
+                    <input className="register-input" value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Password:" id="password" name="password"/>
+                    <div className="no-account">
+          <p>
+            Already have an account?
+          </p>
+          <p className="already-have-acc-btn"
+            onClick={() => navigate("/login")}>Login</p>
+          </div>
+                    <button className="signup-btn" onClick={handleOpen}> Sign Up</button>
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -68,7 +75,7 @@ export const Register = (props) => {
             </form>
 
                
-                <button className="link-btn" onClick={() => navigate('/login')}> Already have an account? Login.</button>
+               
 
             </div>
         </div>

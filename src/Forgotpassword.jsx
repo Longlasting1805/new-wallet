@@ -34,28 +34,28 @@ const handleSubmit = (e) => {
 const navigate = useNavigate()
 
 return(
-    <div style={{ display: 'flex', width: '100%', height: '670px'}}>
+    <div className="forgot-container">
         <div className="forgot-div">
         <img className="forgot-img" src={imgUrl}alt="Italian Trulli"/>
         </div>
-         <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '10rem', marginTop: '15rem'}}>
+        <div className="forgot-pass">
         
-        <label htmlFor="email">Enter Email Address to reset Password</label>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email Address" id="email" name="email"/>
-        <button onClick={handleOpen}>Next</button>
-       
-        <a href="" className="cancel-link" onClick={() => navigate('/login')} >cancel</a>
+            <label className="forgot-label" htmlFor="email">Enter Email Address to reset Password</label>
+            <input className="forgot-input" value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email Address" id="email" name="email"/>
+            <button className="forgot-btn" onClick={handleOpen}>Next</button>
+        
+            <a href="" className="cancel-link" onClick={() => navigate('/login')} >cancel</a>
 
-         <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-                >
-                <Box sx={style}>
-                    Check your mail for your OTP number
-                </Box>
-             </Modal>
+            <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+                    >
+                    <Box sx={style}>
+                        Check your mail for your OTP number
+                    </Box>
+                </Modal>
         </div> 
     </div>
 )

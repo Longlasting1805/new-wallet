@@ -25,7 +25,7 @@ export const Login = (props) => {
       <div className="form">
         <div className="formchild">
           <h2 className="welcome">Welcome Back!</h2>
-          <p className="login-dashboad">Log in to your Dashboad</p>
+          <p className="login-dashboad">Log in to your Dashboard</p>
           <form className="login-form" onSubmit={handleSubmit}>
             {/* <label htmlFor="email">email</label> */}
             <input
@@ -33,7 +33,7 @@ export const Login = (props) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
-              placeholder="ken@gmail.com"
+              placeholder="email:"
               id="email"
               name="email"
             />
@@ -43,7 +43,7 @@ export const Login = (props) => {
               value={pass}
               onChange={(e) => setPass(e.target.value)}
               type="password"
-              placeholder="********"
+              placeholder="password:"
               id="password"
               name="password"
             />
@@ -63,8 +63,7 @@ export const Login = (props) => {
             <button className="login-btn">Login</button>
            
           <div className="no-account">
-          <p
-           >
+          <p>
             Don't have an account?
           </p>
           <p className="dont-have-acc-btn"
