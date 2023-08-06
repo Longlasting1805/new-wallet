@@ -39,6 +39,9 @@ return(
         <img className="forgot-img" src={imgUrl}alt="Italian Trulli"/>
         </div>
         <div className="forgot-pass">
+            <div className="reset-password">
+                <p>Reset Password</p>
+            </div>
         
             <label className="forgot-label" htmlFor="email">Enter Email Address to reset Password</label>
             <input className="forgot-input" value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email Address" id="email" name="email"/>

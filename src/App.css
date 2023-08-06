@@ -475,6 +475,11 @@ background: #FFF;
   line-height: normal;
 }
 
+.reset-password{
+  color: #000;
+  margin-bottom: 80px;
+}
+
 
 .forgot-div{
   height: 100vh;
