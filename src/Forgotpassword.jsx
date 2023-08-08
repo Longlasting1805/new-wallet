@@ -55,7 +55,7 @@ return(
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                     >
-                    <Box sx={style}>
+                    <Box onClick={() => navigate("/otp")} sx={style}>
                         Check your mail for your OTP number
                     </Box>
                 </Modal>

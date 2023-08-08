@@ -67,7 +67,7 @@ export const Register = (props) => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
                 >
-                <Box sx={style}>
+                <Box  onClick={() => navigate("/otp")} sx={style}>
                     Kindly Check your mail to see your OTP number
                             for Account verification
                 </Box>

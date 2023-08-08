@@ -63,6 +63,14 @@
 
 }
 
+.otp-label{
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 15px;
+  font-weight: 200;
+
+}
+
 .login-dashboad{
   font-weight: 400;
   font-size: 15px;
@@ -192,6 +200,21 @@ button{
   /* margin-right: 30rem; */
 }
 
+.otpcontinue-button{
+  width: 39%;
+  border-radius: 13.618px;
+  border: 1.702px solid #56229E;
+  background: #55229E;
+  margin-top: 15px;
+  color: #FFF;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .otp{
   display: flex;
   justify-content: space-between;
@@ -217,12 +240,23 @@ button{
   
 }
 
-.otp-continue{
+.otpcontinue-link{
   margin-left: 60%;
+  margin-bottom: 10%;
+  color: #55229E;
+  text-decoration: underline;
+  font-weight: 50;
+  cursor: pointer;
 }
 .root-div{
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 90vw;
+  /* height: 90vh; */
+  /* margin: auto; */
+  /* overflow-y: hidden; */
 }
 
 .forgot-container{
@@ -267,8 +301,11 @@ button{
 }
 
 .kindly{
-  margin-left: -50px;
-  display: auto;
+  font-weight: 100;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  margin-bottom: 20px;
  
 }
 
@@ -342,8 +379,13 @@ input{
 }
 
 .line{
-  margin-bottom: -1rem;
-  margin-left: -80px;
+  margin-bottom: 3%;
+  margin-right: -300px;
+
+}
+
+.line-div{
+   margin-bottom: 1%;
 }
 
 .lining{
@@ -498,8 +540,12 @@ text-decoration: none;
 
 .registration-img{
   width: 100%;
-  height: 98%;
-  display: flex;
+  height: 100%;
+}
+
+.registration-div{
+  height: 99vh;
+  width: 100%;
 }
 
 

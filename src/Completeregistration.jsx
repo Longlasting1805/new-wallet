@@ -42,7 +42,11 @@ export const Completeregistration = (props) => {
         <div className="select-identification">
         <div className="kindly">
             <p>Kindly Complete your Registration</p>
-            <hr className="line"></hr>
+           
+        </div>
+
+        <div className="line-div">
+        <hr className="line"></hr>
         </div>
 
             <p className="kyc">KYC</p>

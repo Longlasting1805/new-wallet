@@ -46,14 +46,14 @@ export const Otp = (props, text) => {
               <img className="otp-img" src={imgUrl}alt="Italian Trulli"/>
             </div>
            <div>
-            <p style={{ marginLeft: '2rem', marginBottom: '-1rem'}}> Enter your OTP number</p>
+            <p className="otp-label" > Enter your OTP number</p>
                 {/* <label htmlFor="otp" style={{ marginLeft: '5rem', marginBottom: '5rem'}}> otp</label> */}
                  <div className="otp">
                     <MuiOtpInput TextFieldsProps={{ size: 'small', placeholder: '-', type: 'password' }}  value={otp} onChange={handleChange} style={{ width: '300px'}}/>
                 </div>
 
                 <div style={{width: '48rem', }}>
-                  <button style={{width: '15rem', marginTop: '1rem', color: '#7439bd'}} onClick={handleOpen}> Continue</button>
+                  <button className="otpcontinue-button" onClick={handleOpen}> Continue</button>
                   <Modal
                 open={open}
                 onClose={handleClose}
@@ -63,7 +63,7 @@ export const Otp = (props, text) => {
                 >
                 <Box sx={style}>
                     Your Account has been Successfully Verified
-                    <button className="otp-continue" onClick={() => navigate('/Completeregistration')}> continue</button>
+                    <p className="otpcontinue-link" onClick={() => navigate('/Completeregistration')}> continue</p>
                 </Box>
              </Modal>
                 </div>
