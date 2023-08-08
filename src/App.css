@@ -279,16 +279,21 @@ button{
 }
 
 .kyc{
-  margin-right: 400px;
-  margin-bottom: -0rem;
+  margin-right: 350px;
+  margin-bottom: 1rem;
+  color: #000;
 }
 
 .homeaddress{
   width: 300px;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: -6rem;
-  align-items: center;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+  
+    
 }
 
 .select-class{
@@ -296,7 +301,9 @@ button{
   justify-content: flex-start;
   align-items: center;
   margin-left: 5rem;
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
+  color: #000;
+  font-size: 10;
   
 }
 
@@ -315,8 +322,50 @@ button{
   align-items: center;
   
 }
+
+.cardname{
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+}
+
+.cardnumber{
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+}
+
+.expdate{
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+}
+
+.cvv{
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+}
+
 .p-tag{
-  margin-left: -9rem;
+  margin-left: -5rem;
+  color: #000;
 }
 
 .plus{
@@ -324,8 +373,11 @@ button{
 }
 
 .carding{
-  margin-right: 100px;
+  margin-left: -2rem;
+  width: 300px;
+  
 }
+
 input{
   width: 300px;
 }
@@ -379,19 +431,23 @@ input{
 }
 
 .line{
-  margin-bottom: 3%;
-  margin-right: -300px;
+  margin-bottom: -3%;
+  margin-right: 90px;
+  /* text-align: left; */
+  width: 350px;
+  color: #6a0bde;
 
 }
 
 .line-div{
-   margin-bottom: 1%;
+   
 }
 
 .lining{
-  width: 350px;
+  width: 370px;
   margin-top: 1%;
-  margin-right: 31%;
+  margin-right: 80px;
+  color: #6b14d5;
 }
 
 .login-btn{

@@ -39,7 +39,7 @@ export const Completeregistration = (props) => {
         </div>
 
         
-        <div className="select-identification">
+       <div className="select-identification">
         <div className="kindly">
             <p>Kindly Complete your Registration</p>
            
@@ -77,18 +77,18 @@ export const Completeregistration = (props) => {
             <hr className="lining"></hr>
         <div className="cards">
             <p className="p-tag"> Add Cards</p>
-            <BiPlus size={20} style={{marginLeft: "10rem", cursor: "pointer"}}/>
+            <BiPlus size={20} style={{marginLeft: "10rem", cursor: "pointer", color: "#000"}}/>
         </div>
            
             <div className="carding">
-                <input className="Cardname" value={cardname}  onChange={(e) => setCardName(e.target.value)} placeholder="Card Name"/>
-                <input className="Cardnumber" value={cardnumber}  onChange={(e) => setCardNumber(e.target.value)} placeholder="Card Number"/>
-                <input className="Expdate" value={expdate}  onChange={(e) => setExpDate(e.target.value)} placeholder="Exp.Date"/>
+                <input className="cardname" value={cardname}  onChange={(e) => setCardName(e.target.value)} placeholder="Card Name"/>
+                <input className="cardnumber" value={cardnumber}  onChange={(e) => setCardNumber(e.target.value)} placeholder="Card Number"/>
+                <input className="expdate" value={expdate}  onChange={(e) => setExpDate(e.target.value)} placeholder="Exp.Date"/>
                 <input className="cvv" value={cvv}  onChange={(e) => setCvv(e.target.value)} placeholder="CVV"/>
             </div>
             <a href="" onClick={() => navigate('/moredetails')} className="next" >Next</a>
 
-        </div>
+      </div>
        
     </div>
     )
