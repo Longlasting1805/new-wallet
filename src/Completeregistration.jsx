@@ -63,9 +63,9 @@ export const Completeregistration = (props) => {
                     onChange={handleChange}
                     sx={{color: "White", marginTop:"2rem", marginLeft:"5rem",width:"300px", marginBottom:"1rem"}}
                 >
-                    <MenuItem value={"Nin"}>Nin</MenuItem>
-                    <MenuItem value={"Drivers licence"}>Drivers licence</MenuItem>
-                    <MenuItem value={"Voters card"}>Voters card</MenuItem>
+                    <MenuItem placeholder="nin" value={"Nin"}>Nin</MenuItem>
+                    <MenuItem placeholder="drivers licence" value={"Drivers licence"}>Drivers licence</MenuItem>
+                    <MenuItem placeholder="voters card" value={"Voters card"}>Voters card</MenuItem>
                 
                 </Select>
                

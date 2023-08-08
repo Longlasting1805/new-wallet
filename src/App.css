@@ -363,6 +363,45 @@ button{
   margin-left: -3rem;
 }
 
+.fullname{
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+}
+
+.email{
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+}
+
+.phonenumber{
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+}
+
+.relationship{
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+}
 .p-tag{
   margin-left: -5rem;
   color: #000;
@@ -384,6 +423,7 @@ input{
 
 .next{
   margin-left: 10rem;
+  
 }
 
 /* .image{
@@ -397,33 +437,83 @@ input{
 
 .root{
   display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 100vw;
+  /* height: 90vh; */
+  /* margin: auto; */
+  /* overflow-y: hidden; */
 }
 
 .details{
   width: 50%;
-  margin-top: 90px;
+  /* height: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  background: #ffffff;
 }
 
 .nextkin{
   margin-right: 14rem;
   margin-bottom: -0rem;
+  /* margin-right: -5rem; */
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .more-details{
   margin-right: -5rem;
+  /* font-family: 'Roboto', sans-serif; */
+  color: #000;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .bvn{
   margin-left: -15rem;
   margin-bottom: -0rem;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  margin-top: 20px;
 }
 
-.bvn-tag{
+.bvn-input{
   margin-left: 0rem;
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #C4C4C4;
+  background: #FFF;
+  margin-left: -3rem;
+  
+  
 }
 
 .continue{
-  width: 30%;
+  /* width: 30%; */
+  width: 45%;
+border-radius: 13.618px;
+border: 1.702px solid #56229E;
+background: #55229E;
+margin-top: 15px;
+color: #FFF;
+text-align: center;
+/* font-family: Roboto; */
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-right: 45px;
+margin-bottom: 2rem;
 }
 
 .prev{
@@ -607,10 +697,14 @@ text-decoration: none;
 
 
 .details-img{
-  height: 75%;
   width: 90%;
+  height: 90%;
 }
 
+.details-div{
+  height: 100vh;
+  width: 50%;
+}
 .no-account{
   display: flex;
   justify-content: space-between;
