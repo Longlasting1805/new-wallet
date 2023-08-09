@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import imgUrl from './assets/forgot.jpg'
+import imgUrl from './assets/forgot.jpg';
+// import imgUrl from './assets/vector.jpg';
 import { useNavigate } from "react-router-dom";
 import Modal from '@mui/material/Modal';
 import { Box, Typography } from "@mui/material";
@@ -17,8 +18,8 @@ const style = {
     p: 4,
   };
 
-export const Forgot = (props) => {
-    const [email, setEmail] = useState('');
+export const Newpassword = (props) => {
+    const [newPassword, setNewpassword] = useState('');
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -28,7 +29,7 @@ export const Forgot = (props) => {
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email);
+    console.log(newPassword);
 }
 
 const navigate = useNavigate()
@@ -39,15 +40,15 @@ return(
         <img className="forgot-img" src={imgUrl}alt="Italian Trulli"/>
         </div>
         <div className="forgot-pass">
-            <div className="reset-password">
+            {/* <div className="reset-password">
                 <p>Reset Password</p>
-            </div>
+            </div> */}
         
-            <label className="forgot-label" htmlFor="email">Enter Email Address to reset Password</label>
-            <input className="forgot-input" value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email Address" id="email" name="email"/>
-            <button className="forgot-btn" onClick={handleOpen}>Next</button>
+            <label className="newpasswordlabel" htmlFor="email">Enter New Password</label>
+            <input className="forgot-input" value={newPassword} onChange={(e) => setNewpassword(e.target.value)} type="new password" placeholder="New Pasword" id="new password" name="new password"/>
+            <button className="forgot-btn" onClick={handleOpen}>Reset</button>
         
-            <a href="" className="cancel-link" onClick={() => navigate('/login')} >cancel</a>
+            {/* <a href="" className="cancel-link" onClick={() => navigate('/login')} >cancel</a> */}
 
             <Modal
                     open={open}
@@ -55,8 +56,12 @@ return(
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                     >
-                    <Box onClick={() => navigate("/Forgotpasswordotp")} sx={style}>
-                        Check your mail for your OTP number
+                    <Box className="success-box" onClick={() => navigate("/Forgotpasswordotp")} sx={style}>
+                        Success
+                        <div>
+                            { <a href="" className="dashboard-link" onClick={() => navigate('/login')} >Go to Dashboard</a> }
+
+                        </div>
                     </Box>
                 </Modal>
         </div> 

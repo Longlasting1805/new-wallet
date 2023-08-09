@@ -8,6 +8,8 @@ import {Routes, Route} from 'react-router-dom'
 import { Otp } from './Otp';
 import { Completeregistration } from "./Completeregistration";
 import { Moredetails } from "./Moredetails"
+import { Forgotpasswordotp } from "./Forgotpasswordotp"
+import { Newpassword } from "./Newpassword";
 
 
 function App() {
@@ -27,6 +29,9 @@ function App() {
        <Route path="/otp" element={<Otp />}/>
        <Route path="/completeregistration" element={<Completeregistration />}/>
        <Route path="/moredetails" element={<Moredetails />}/>
+       <Route path="/forgotpasswordotp" element={<Forgotpasswordotp />}/>
+       <Route path="/newpassword" element={<Newpassword />}/>
+
              
        
        
