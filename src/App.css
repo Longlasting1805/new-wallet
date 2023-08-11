@@ -551,7 +551,20 @@ margin-bottom: 2rem;
 }
 
 .success-box{
-  
+  color: #000;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.vector-img{
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+
 }
 
 

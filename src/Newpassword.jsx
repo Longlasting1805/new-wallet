@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import imgUrl from './assets/forgot.jpg';
-// import imgUrl from './assets/vector.jpg';
+import imgUrl2 from './assets/vector.jpg';
 import { useNavigate } from "react-router-dom";
 import Modal from '@mui/material/Modal';
 import { Box, Typography } from "@mui/material";
@@ -57,7 +57,9 @@ return(
                     aria-describedby="modal-modal-description"
                     >
                     <Box className="success-box" onClick={() => navigate("/Forgotpasswordotp")} sx={style}>
+                    
                         Success
+                        <img className="vector-img" src={imgUrl2}alt="Italian Trulli"/>
                         <div>
                             { <a href="" className="dashboard-link" onClick={() => navigate('/login')} >Go to Dashboard</a> }
 
