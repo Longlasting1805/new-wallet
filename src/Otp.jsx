@@ -45,7 +45,7 @@ export const Otp = (props, text) => {
             <div className="otp-div">
               <img className="otp-img" src={imgUrl}alt="Italian Trulli"/>
             </div>
-           <div>
+           <div className="otpform">
             <p className="otp-label" > Enter your OTP number</p>
                 {/* <label htmlFor="otp" style={{ marginLeft: '5rem', marginBottom: '5rem'}}> otp</label> */}
                  <div className="otp">

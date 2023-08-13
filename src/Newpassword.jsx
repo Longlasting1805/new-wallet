@@ -35,9 +35,9 @@ const handleSubmit = (e) => {
 const navigate = useNavigate()
 
 return(
-    <div className="forgot-container">
-        <div className="forgot-div">
-        <img className="forgot-img" src={imgUrl}alt="Italian Trulli"/>
+    <div className="newpasswordcontainer">
+        <div className="newpassworddiv">
+        <img className="newpasswordimg" src={imgUrl}alt="Italian Trulli"/>
         </div>
         <div className="forgot-pass">
             {/* <div className="reset-password">
@@ -56,7 +56,7 @@ return(
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                     >
-                    <Box className="success-box" onClick={() => navigate("/Forgotpasswordotp")} sx={style}>
+                    <Box className="success-box" onClick={() => navigate("/login")} sx={style}>
                     
                         Success
                         <img className="vector-img" src={imgUrl2}alt="Italian Trulli"/>

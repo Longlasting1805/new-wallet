@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { MuiOtpInput } from 'mui-one-time-password-input'
 import Modal from '@mui/material/Modal';
 import { Box, Typography } from "@mui/material";
+// import StepProgressBar from 'react-step-progress';
+// import 'react-step-progress/dist/index.css';
 
 
 
@@ -41,15 +43,15 @@ export const Forgotpasswordotp = (props, text) => {
       }
 
     return(
-        <div className="otp-form">
-            <div className="otp-div">
-              <img className="otp-img" src={imgUrl}alt="Italian Trulli"/>
+        <div className="forgototp-form">
+            <div className="forgototp-div">
+              <img className="forgototp-img" src={imgUrl}alt="Italian Trulli"/>
             </div>
-           <div>
+          <div className="otpnumber-container">
             <p className="otp-label" > Enter your OTP number</p>
                 {/* <label htmlFor="otp" style={{ marginLeft: '5rem', marginBottom: '5rem'}}> otp</label> */}
                  <div className="otp">
-                    <MuiOtpInput TextFieldsProps={{ size: 'small', placeholder: '-', type: 'password' }}  value={otp} onChange={handleChange} style={{ width: '300px'}}/>
+                    <MuiOtpInput className="forgototp-input-" TextFieldsProps={{ size: 'small', placeholder: '-', type: 'password' }}  value={otp} onChange={handleChange} style={{ width: '300px'}}/>
                 </div>
 
                 <div style={{width: '48rem', }}>
@@ -72,7 +74,7 @@ export const Forgotpasswordotp = (props, text) => {
              </Modal>
                 </div>
                    
-           </div>
+          </div>
         </div>
     )
 }

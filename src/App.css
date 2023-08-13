@@ -48,6 +48,18 @@
   background: #ffffff;
   
 }
+
+.otpform{
+  width: 58%;
+  /* height: 50%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  background: #ffffff;
+
+}
 .formchild{
    width: 60%;
   /* height: 250%; */
@@ -69,6 +81,11 @@
   font-size: 15px;
   font-weight: 200;
 
+}
+
+.otp-div{
+  height: 100vh;
+  width: 50%;
 }
 
 .login-dashboad{
@@ -159,6 +176,29 @@ button{
   align-items: center;
 
 }
+
+.forgototp-form{
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 100vw;
+  /* height: 90vh; */
+  /* margin: auto; */
+  /* overflow-y: hidden; */
+}
+
+.forgototp-div{
+  height: 100vh;
+  width: 50%;
+}
+
+.forgototp-img{
+  width: 120%;
+  height: 100%;
+}
+
 .already-have-acc-btn{
   color: #55229E;
   text-decoration: underline;
@@ -192,12 +232,14 @@ button{
 }
 
 .otp-form{
-  /* width: 50%; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 42rem;
-  /* margin-right: 30rem; */
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 100vw;
+  /* height: 90vh; */
+  /* margin: auto; */
+  /* overflow-y: hidden; */
 }
 
 .otpcontinue-button{
@@ -219,17 +261,13 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 15rem;
+  margin-left: 1rem;
   margin-top: 3rem;
 
 }
 .otp-img{
-  width: 110%;
-  height: 95vh;
-  background-color: red;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  width: 120%;
+  height: 100%;
 }
 
 .otp-img img{
@@ -238,6 +276,21 @@ button{
   display: flex;
   justify-content: flex-end;
   
+}
+
+.otpnumber-container{
+  width: 40;
+  /* height: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  background: #ffffff; 
+}
+
+.forgototp-input{
+  margin-right: 10rem;
 }
 
 .otpcontinue-link{
@@ -264,8 +317,8 @@ button{
   flex-direction: row;
   /* justify-content: space-around; */
   /* align-items: center; */
-  width: 295vw;
-  height: 100vh;
+  width: 100vw;
+  /* height: 90vh; */
   /* margin: auto; */
   /* overflow-y: hidden; */
 }
@@ -552,18 +605,21 @@ margin-bottom: 2rem;
 
 .success-box{
   color: #000;
-text-align: center;
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
 }
 
 .vector-img{
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
+  margin-top: 10px;
+  
 
 }
 
@@ -614,6 +670,28 @@ line-height: normal;
     
 }
 
+.newpasswordcontainer{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 100vw;
+  /* height: 90vh; */
+  /* margin: auto; */
+  /* overflow-y: hidden; */
+}
+
+.newpassworddiv{
+  height: 100vh;
+  width: 60%;
+}
+
+.newpasswordimg{
+
+  width: 100%;
+  height: 100%;
+}
+
 .login-img{
   /* width: 80%; */
   /* height: 110%; */
@@ -659,7 +737,7 @@ background: #FFF;
 }
 
 .forgot-img{
-  width: 125%;
+  width: 100%;
   height: 100%;
 }
 
@@ -712,7 +790,7 @@ background: #FFF;
 
 .forgot-div{
   height: 100vh;
-  width: 40;
+  width: 50%;
 }
 
 .forgotp{
