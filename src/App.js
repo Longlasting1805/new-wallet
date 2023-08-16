@@ -10,6 +10,7 @@ import { Completeregistration } from "./Completeregistration";
 import { Moredetails } from "./Moredetails"
 import { Forgotpasswordotp } from "./Forgotpasswordotp"
 import { Newpassword } from "./Newpassword";
+import { Dashboard } from "./Dashboard";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
        <Route path="/moredetails" element={<Moredetails />}/>
        <Route path="/forgotpasswordotp" element={<Forgotpasswordotp />}/>
        <Route path="/newpassword" element={<Newpassword />}/>
+       <Route path="/dashboard" element={<Dashboard />}/>
 
              
        
