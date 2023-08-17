@@ -60,7 +60,7 @@ export const Login = (props) => {
               </a>
              
             </div>
-            <button className="login-btn">Login</button>
+            <button className="login-btn" onClick={() => navigate("/dashboard")}>Login</button>
            
           <div className="no-account">
           <p>

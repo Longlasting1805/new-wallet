@@ -40,7 +40,7 @@ export const Moredetails = (props) => {
                 <p className="bvn">BVN</p>
                 <input className="bvn-input" value={bvn}  onChange={(e) => setBvn(e.target.value)} placeholder="BVN"/>
                 </div>
-                <button className="continue">Continue</button>
+                <button className="continue" onClick={() => navigate("/dashboard")}>Continue</button>
                 <div className="prev">
                 <a href="" onClick={() => navigate('/completeregistration')} className="prev" >Prev</a>
                 </div>
