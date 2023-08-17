@@ -56,12 +56,12 @@ return(
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                     >
-                    <Box className="success-box" onClick={() => navigate("/login")} sx={style}>
+                    <Box className="success-box" onClick={() => navigate("/dashboard")} sx={style}>
                     
                         Success
                         <img className="vector-img" src={imgUrl2}alt="Italian Trulli"/>
                         <div>
-                            { <a href="" className="dashboard-link" onClick={() => navigate('/login')} >Go to Dashboard</a> }
+                            { <a href="" className="dashboard-link">Go to Dashboard</a> }
 
                         </div>
                     </Box>

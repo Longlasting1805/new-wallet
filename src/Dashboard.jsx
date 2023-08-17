@@ -43,23 +43,30 @@ export const Dashboard = (props) => {
                     <div className="card-div">
           <Card className="root-card">
               <CardContent className="card-content">
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                  Word of the Day
-                </Typography>
-                <Typography variant="h5" component="div">
-                  be{card}nev{card}o{card}lent
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
-                <Typography variant="body2">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
-                </Typography>
+              <div>
+                <p>
+                  Hi Kenny,
+                </p>
+               
+               <div>
+                <CardContent className="card-content2">
+                  <div>
+                    <p>Total Balance</p>
+                    <p>£1m</p>
+                  </div>
+
+                  <div>
+                    
+                  </div>
+
+                </CardContent>
+               </div>
+              </div>
+              
+               
               </CardContent>
-              <CardActions>
-                <Button size="small">Learn More</Button>
+              <CardActions className="card-action">
+                {/* <Button size="small">Learn More</Button> */}
               </CardActions>
         </Card>
       
