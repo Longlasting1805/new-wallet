@@ -301,6 +301,14 @@ button {
   /* overflow-y: hidden; */
 }
 
+.balance-div{
+  /* width: 13rem; */
+}
+
+.ellipse-img{
+  margin-right: 30rem;
+}
+
 .forgot-container {
   display: flex;
   flex-direction: row;
@@ -793,7 +801,16 @@ input {
 
 .images-div{
   display: flex;
+  align-items: center;
   
+}
+
+.transaction-div{
+  margin-bottom: 5rem;
+}
+
+.transaction-p{
+  margin-top: 2rem;
 }
 .no-account {
   display: flex;

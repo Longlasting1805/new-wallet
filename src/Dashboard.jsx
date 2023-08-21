@@ -6,6 +6,10 @@ import imgUrl3 from "./assets/handMoney.jpg";
 import imgUrl4 from "./assets/help.jpg";
 import imgUrl5 from "./assets/airtime.jpg";
 import imgUrl6 from "./assets/save.jpg";
+import imgUrl7 from "./assets/ellipse19.jpg";
+import imgUrl8 from "./assets/ellipse20.jpg";
+import imgUrl9 from "./assets/ellipse21.jpg";
+import imgUrl10 from "./assets/ellipse22.jpg";
 
 // import { Checkbox } from "@mui/material";
 // import { useNavigate } from "react-router-dom";
@@ -54,10 +58,10 @@ export const Dashboard = (props) => {
                   Hi Kenny,
                 </p>
                
-               <div>
+               <div className="cardcontent-div">
                 <CardContent className="card-content2">
-                  <div>
-                    <p>Total Balance</p>
+                  <div className="balance-div">
+                    <p className="balance-paragraph">Total Balance</p>
                     <p>£1m</p>
                   </div>
 
@@ -78,6 +82,26 @@ export const Dashboard = (props) => {
 
               </div>
 
+              <div className="transaction-div">
+                <p className="transaction-p">Recent Transactions</p>
+              </div>
+
+              <div className="cardcontent-div">
+                <CardContent className="card-content2">
+                  <div>
+                    <p>Water Payment</p>
+                    <p>10:00am</p>
+              
+                    <img className="ellipse-img" src={imgUrl7}alt="Trulli"/>
+                  
+                    
+                  </div>
+
+                </CardContent>
+               </div>
+
+              
+
               
               
                
@@ -85,11 +109,11 @@ export const Dashboard = (props) => {
               <CardActions className="card-action">
                 {/* <Button size="small">Learn More</Button> */}
               </CardActions>
-        </Card>
+              </Card>
       
   
         </div>
-                </div>
+      </div>
        
   </div>
   );
