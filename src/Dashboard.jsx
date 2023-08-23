@@ -10,6 +10,7 @@ import imgUrl7 from "./assets/ellipse19.jpg";
 import imgUrl8 from "./assets/ellipse20.jpg";
 import imgUrl9 from "./assets/ellipse21.jpg";
 import imgUrl10 from "./assets/ellipse22.jpg";
+import imgUrl11 from "./assets/user.jpg";
 
 // import { Checkbox } from "@mui/material";
 // import { useNavigate } from "react-router-dom";
@@ -53,10 +54,13 @@ export const Dashboard = (props) => {
                     <div className="card-div">
           <Card className="root-card">
               <CardContent className="card-content">
-              <div>
-                <p>
+              <div className="greeting-div">
+                <p className="greeting-paragraph">
                   Hi Kenny,
                 </p>
+                <div className="userimg-div">
+                <img className="user-img" src={imgUrl11}alt="Trulli"/>
+                </div>
                
                <div className="cardcontent-div">
                 <CardContent className="card-content2">
@@ -86,7 +90,7 @@ export const Dashboard = (props) => {
                 <p className="transaction-p">Recent Transactions</p>
               </div>
 
-              <div className="cardcontent-div">
+              <div className="cardcontent2-div">
                 <CardContent className="card-content2">
                   <div>
                     <p>Water Payment</p>

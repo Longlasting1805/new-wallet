@@ -301,6 +301,10 @@ button {
   /* overflow-y: hidden; */
 }
 
+.greeting-paragraph{
+  margin-right: 35rem;
+}
+
 .balance-div{
   /* width: 13rem; */
 }
@@ -826,9 +830,17 @@ input {
 .card-content2{
   color: #000;
   background-color: rgb(210, 208, 208);
+  width: 35%;
+  margin-left: 10rem;
+
+}
+
+.user-img{
+  width: 10%;
+  margin-bottom: 2%;
 }
 
 .register-div {
   height: 100vh;
-  width: 50%;
+  width: 30%;
 }

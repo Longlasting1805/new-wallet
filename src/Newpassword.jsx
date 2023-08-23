@@ -61,7 +61,7 @@ return(
                         Success
                         <img className="vector-img" src={imgUrl2}alt="Italian Trulli"/>
                         <div>
-                            { <a href="" className="dashboard-link">Go to Dashboard</a> }
+                            { <a href="" className="dashboard-link" onClick={() => navigate("/dashboard")}>Go to Dashboard</a> }
 
                         </div>
                     </Box>
