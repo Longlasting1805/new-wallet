@@ -827,11 +827,11 @@ input {
   margin-top: 10px;
 }
 
-.card-content2{
+.greeting-card{
   color: #000;
-  background-color: rgb(210, 208, 208);
-  width: 35%;
-  margin-left: 10rem;
+  /* background-color: rgb(210, 208, 208); */
+  /* width: 35%; */
+  /* margin-left: 10rem; */
 
 }
 

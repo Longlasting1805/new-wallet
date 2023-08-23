@@ -11,6 +11,8 @@ import imgUrl8 from "./assets/ellipse20.jpg";
 import imgUrl9 from "./assets/ellipse21.jpg";
 import imgUrl10 from "./assets/ellipse22.jpg";
 import imgUrl11 from "./assets/user.jpg";
+import imgUrl12 from "./assets/bell.jpg";
+import imgUrl13 from "./assets/eye.jpg";
 
 // import { Checkbox } from "@mui/material";
 // import { useNavigate } from "react-router-dom";
@@ -53,7 +55,7 @@ export const Dashboard = (props) => {
 
            <div className="card-div">
               <Card className="root-card">
-                  <CardContent className="card-content">
+                  <CardContent className="greeting-card">
                   <div className="greeting-div">
                     <p className="greeting-paragraph">
                       Hi Kenny,
@@ -67,13 +69,15 @@ export const Dashboard = (props) => {
                       <div className="amount-div">
                         <p className="amount-paragraph">Total Balance</p>
                         <p>£1m</p>
+                        <img className="bell-img" src={imgUrl12}alt="Trulli"/>
+                        <img className="eye-img" src={imgUrl13}alt="Trulli"/>
                       </div>
 
                     </CardContent>
                   </div>
                   </div>
 
-                  
+
                   <div className="images-div">
                         <img className="atm-img" src={imgUrl2}alt="Trulli"/>
                         <p>cards</p>
@@ -97,6 +101,7 @@ export const Dashboard = (props) => {
                       <div className="waterpaymentsecond-div">
                         <p>Water Payment</p>
                         <p>10:00am</p>
+                        <p>-$1,000</p>
                   
                         <img className="ellipse-img" src={imgUrl7}alt="Trulli"/>
                       
@@ -110,6 +115,7 @@ export const Dashboard = (props) => {
                       <div className="airtime-div">
                         <p>Airtime</p>
                         <p>10:00am</p>
+                        <p>-$200</p>
                         <img className="ellipse-img" src={imgUrl8}alt="Trulli"/>
                       </div>
                     </CardContent>
@@ -120,6 +126,7 @@ export const Dashboard = (props) => {
                       <div className="pocket-div">
                         <p>Pocket Moni</p>
                         <p>10:00am</p>
+                        <p>$5,000</p>
                   
                         <img className="ellipse-img" src={imgUrl9}alt="Trulli"/>
                       
@@ -135,6 +142,7 @@ export const Dashboard = (props) => {
                     
                         <p>Up-keep</p>
                         <p>10:00am</p>
+                        <p>$5,000</p>
                   
                         <img className="ellipse-img" src={imgUrl10}alt="Trulli"/>
                       
