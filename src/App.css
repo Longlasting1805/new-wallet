@@ -809,8 +809,13 @@ input {
   
 }
 
+
 .transaction-div{
   margin-bottom: 5rem;
+}
+
+.waterpayment-div{
+  /* display: flex; */
 }
 
 .transaction-p{

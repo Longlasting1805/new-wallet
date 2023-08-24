@@ -80,7 +80,7 @@ export const Dashboard = (props) => {
 
                   <div className="images-div">
                         <img className="atm-img" src={imgUrl2}alt="Trulli"/>
-                        <p>cards</p>
+                        <p className="atm-card">cards</p>
                         <img className="spend-img" src={imgUrl3}alt="Trulli"/>
                         <p>Spend</p>
                         <img className="help-img" src={imgUrl4}alt="Trulli"/>
