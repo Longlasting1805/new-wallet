@@ -14,6 +14,14 @@
   color: white;
 }
 
+.amountcard-div{
+  background-color: rgb(201, 199, 199);
+  width: 50%;
+  margin-left: 10rem;
+
+
+}
+
 .auth-form-container {
   display: flex;
   flex-direction: row;
@@ -25,7 +33,21 @@
   /* overflow-y: hidden; */
 }
 
-.login-form,
+.airtimecard-div{
+  display: flex;
+  background-color: rgb(201, 199, 199);
+}
+
+.airtime-div{
+  display: flex;
+  align-items: center;
+  
+}
+
+.airtime-p{
+  margin-right: 12rem;
+}
+
 .register-form {
   display: flex;
   flex-direction: column;

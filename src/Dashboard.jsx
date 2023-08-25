@@ -113,10 +113,11 @@ export const Dashboard = (props) => {
                     <div className="airtimecard-div">
                     <CardContent className="airtime-card">
                       <div className="airtime-div">
-                        <p>Airtime</p>
+                      <img className="ellipse-img" src={imgUrl8}alt="Trulli"/>
+                        <p className="airtime-p">Airtime</p>
                         <p>10:00am</p>
                         <p>-$200</p>
-                        <img className="ellipse-img" src={imgUrl8}alt="Trulli"/>
+                        {/* <img className="ellipse-img" src={imgUrl8}alt="Trulli"/> */}
                       </div>
                     </CardContent>
                     </div>
