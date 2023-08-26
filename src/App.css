@@ -36,6 +36,7 @@
 .airtimecard-div{
   display: flex;
   background-color: rgb(201, 199, 199);
+  width: 30%;
 }
 
 .airtime-div{
@@ -48,6 +49,9 @@
   margin-right: 12rem;
 }
 
+.airtime-card{
+ 
+}
 .register-form {
   display: flex;
   flex-direction: column;
@@ -314,10 +318,12 @@ button {
 }
 .root-div {
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
-  /* align-items: center; */
-  width: 90vw;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  background-color: #55229E1C;
+  width: 100%;
+  /* width: 90vw; */
   /* height: 90vh; */
   /* margin: auto; */
   /* overflow-y: hidden; */

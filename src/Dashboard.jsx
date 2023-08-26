@@ -38,11 +38,12 @@ export const Dashboard = (props) => {
     return (
     <div className="root-div">
 
-      <div className="group-div">
+      {/* <div className="group-div">
         <img className="group-img" src={imgUrl1}alt="Trulli"/>
-      </div>
+      </div> */}
 
       <div className="money-div">
+                      {/* <img className="money-img" src={imgUrl}alt="Trulli"/>
                       <img className="money-img" src={imgUrl}alt="Trulli"/>
                       <img className="money-img" src={imgUrl}alt="Trulli"/>
                       <img className="money-img" src={imgUrl}alt="Trulli"/>
@@ -50,11 +51,10 @@ export const Dashboard = (props) => {
                       <img className="money-img" src={imgUrl}alt="Trulli"/>
                       <img className="money-img" src={imgUrl}alt="Trulli"/>
                       <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
+                      <img className="money-img" src={imgUrl}alt="Trulli"/> */}
 
            <div className="card-div">
-              <Card className="root-card">
+              {/* <Card className="root-card">
                   <CardContent className="greeting-card">
                   <div className="greeting-div">
                     <p className="greeting-paragraph">
@@ -117,7 +117,7 @@ export const Dashboard = (props) => {
                         <p className="airtime-p">Airtime</p>
                         <p>10:00am</p>
                         <p>-$200</p>
-                        {/* <img className="ellipse-img" src={imgUrl8}alt="Trulli"/> */}
+                        
                       </div>
                     </CardContent>
                     </div>
@@ -157,7 +157,7 @@ export const Dashboard = (props) => {
 
                   
                   </CardContent>
-                  </Card>
+                  </Card> */}
           
       
             </div>
