@@ -36,25 +36,11 @@ export const Dashboard = (props) => {
   //   const navigate = useNavigate();
 
   return (
-    <div className="root-div">
-      {/* <div className="group-div">
-        <img className="group-img" src={imgUrl1}alt="Trulli"/>
-      </div> */}
+           <div className="card-div"> 
 
-      <div className="money-div">
-        {/* <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/>
-                      <img className="money-img" src={imgUrl}alt="Trulli"/> */}
-
-        <div className="card-div">
-          <div className="root-divv">
-            <CardContent className="greeting-card">
+           
+      
+            <div className="greeting-card">
               <div className="greeting-div">
                 <p className="greeting-paragraph">Hi Kenny,</p>
                 <div className="userimg-div">
@@ -62,14 +48,14 @@ export const Dashboard = (props) => {
                 </div>
 
                 <div className="amountcard-div">
-                  <CardContent className="amount-card">
+                  <div className="amount-card">
                     <div className="amount-div">
                       <p className="amount-paragraph">Total Balance</p>
                       <p>£1m</p>
                       <img className="bell-img" src={imgUrl12} alt="Trulli" />
                       <img className="eye-img" src={imgUrl13} alt="Trulli" />
                     </div>
-                  </CardContent>
+                  </div>
                 </div>
               </div>
 
@@ -91,7 +77,7 @@ export const Dashboard = (props) => {
               </div>
 
               <div className="waterpayment-div">
-                <CardContent className="waterpayment-card">
+                <div className="waterpayment-card">
                   <div className="waterpaymentsecond-div">
                     <p>Water Payment</p>
                     <p>10:00am</p>
@@ -99,21 +85,21 @@ export const Dashboard = (props) => {
 
                     <img className="ellipse-img" src={imgUrl7} alt="Trulli" />
                   </div>
-                </CardContent>
+                </div>
 
                 <div className="airtimecard-div">
-                  <CardContent className="airtime-card">
+                  <div className="airtime-card">
                     <div className="airtime-div">
                       <img className="ellipse-img" src={imgUrl8} alt="Trulli" />
                       <p className="airtime-p">Airtime</p>
                       <p>10:00am</p>
                       <p>-$200</p>
                     </div>
-                  </CardContent>
+                  </div>
                 </div>
 
                 <div className="pocketmoni-div">
-                  <CardContent className="pocketmoni-card">
+                  <div className="pocketmoni-card">
                     <div className="pocket-div">
                       <p>Pocket Moni</p>
                       <p>10:00am</p>
@@ -121,23 +107,22 @@ export const Dashboard = (props) => {
 
                       <img className="ellipse-img" src={imgUrl9} alt="Trulli" />
                     </div>
-                  </CardContent>
+                  </div>
                 </div>
 
                 <div className="upkeep-div">
-                  <CardContent className="upkeep-card">
+                  <div className="upkeep-card">
                     <p>Up-keep</p>
                     <p>10:00am</p>
                     <p>$5,000</p>
 
                     <img className="ellipse-img" src={imgUrl10} alt="Trulli" />
-                  </CardContent>
+                  </div>
                 </div>
               </div>
-            </CardContent>
-          </div>
-        </div>
-      </div>
-    </div>
+            </div>
+            </div>
+            
+         
   );
 };
