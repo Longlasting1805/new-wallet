@@ -105,7 +105,7 @@ export const Dashboard = (props) => {
                   <div className="recent-trans">
                     <div>
                       <p className="date">3-28-2022</p>
-                      <img src={imgUrl9} />
+                      <img className="ellipse20" src={imgUrl9} />
                     </div>
                     <div className="water-time">
                       <p className="water">Airtime</p>
@@ -137,7 +137,7 @@ export const Dashboard = (props) => {
                   <div className="recent-trans">
                     <div>
                       <p className="date">3-28-2022</p>
-                      <img src={imgUrl11} />
+                      <img className="ellipse22" src={imgUrl11} />
                     </div>
                     <div className="water-time">
                       <p className="water">Up-keep</p>
