@@ -883,13 +883,13 @@ width: 100%;
 
 .card-background{
   width: 670px;
-  height: 586px;
+  height: 640px;
   flex-shrink: 0;
   border-radius: 10px;
   background: #FFF;
   margin: 0 auto;
-  margin-top: 40px;
-  padding: 20px 70px;
+  margin-top: 20px;
+  padding: 0px 40px;
 
 }
 
@@ -907,10 +907,10 @@ line-height: normal;
 background: #FFF;
 box-shadow: 0px 0px 0px 3.67585px rgba(0, 0, 0, 0.04);
 width: 337.744px;
-height: 89px;
+height: 79px;
 flex-shrink: 0;
 margin: auto;
-padding: 12px 0;
+padding: 5px 0;
 }
 .total{
   color: #726D6D;
@@ -937,7 +937,7 @@ font-weight: 700;
 line-height: normal;
 }
 .money-div{
-  padding-top: 20px;
+  padding-top: 12px;
 }
 .total-balance{
   display: flex;
@@ -977,8 +977,21 @@ line-height: normal;
 }
 .card-container{
   display: flex;
-  margin: 30px 20px;
+  margin: 25px 40px;
 
+}
+
+.arrow{
+  margin-top: 200%;
+  margin-left: 50%;
+}
+
+.moni{
+  color: rgba(0, 0, 0, 0.74);;
+}
+
+.up-keep{
+  color: rgba(0, 0, 0, 0.74);;
 }
 .trans{
   color: #000;
