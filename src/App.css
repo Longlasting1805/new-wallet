@@ -975,6 +975,45 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
+.spend-text{
+  color: #726D6D;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.help-text{
+  color: #726D6D;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.airtime-text{
+  color: #726D6D;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.save-text{
+  color: #726D6D;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .card-container{
   display: flex;
   margin: 25px 40px;

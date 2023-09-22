@@ -69,19 +69,19 @@ export const Dashboard = (props) => {
                   </div>
                   <div>
                     <img src={imgUrl4} />
-                    <p className="card-text">Spend</p>
+                    <p className="spend-text">Spend</p>
                   </div>
                   <div>
                     <img src={imgUrl5} />
-                    <p className="card-text">Help</p>
+                    <p className="help-text">Help</p>
                   </div>
                   <div>
                     <img src={imgUrl6} />
-                    <p className="card-text">Airtime</p>
+                    <p className="airtime-text">Airtime</p>
                   </div>
                   <div>
                     <img src={imgUrl7} />
-                    <p className="card-text">Save</p>
+                    <p className="save-text">Save</p>
                   </div>
                 </div>
                 <div>
