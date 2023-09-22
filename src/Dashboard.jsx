@@ -13,29 +13,29 @@ import imgUrl11 from "./assets/ellipse22.jpg";
 import imgUrl12 from "./assets/user.jpg";
 import imgUrl13 from "./assets/bell.jpg";
 import imgUrl14 from "./assets/eye.jpg";
-import imgUrl15 from "./assets/WebdashboardPage.jpg"
 import imgUrl16 from  "./assets/arrow.jpg"
+import { useNavigate } from "react-router-dom";
 
-// import { Checkbox } from "@mui/material";
-// import { useNavigate } from "react-router-dom";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 export const Dashboard = (props) => {
-  const [card, setCard] = useState("");
+  const [amount, setAmount] = useState("");
+  const [visible, setVisible] = useState(false);
+  const isamount = "10,000";
   //   const [pass, setPass] = useState("");
+
+  const toggleEyeVisibility = () => {
+    setVisible(!visible);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(email);
   };
 
-  //   const navigate = useNavigate();
+    const navigate = useNavigate();
+    const displayValue = amount ? isamount : "*".repeat(amount.length);
 
   return (
            <div className="card-div"> 
@@ -51,8 +51,13 @@ export const Dashboard = (props) => {
                 </div>
                 <div className="money-div">
                   <div className="total-balance">
-                  <p className="money"><span>&#8358;</span>10,000</p>
-                  <img src={imgUrl14} />
+                    
+                  <p  className="money" > <span>&#8358;</span>{visible ? "10,000":"*****"}</p>
+                  <img type={visible ? "text" : "password"} 
+                  onClick={toggleEyeVisibility} 
+                  src={imgUrl14}
+                   style={{ cursor: "pointer" }}
+                  />
                   </div>
                 </div>
               </div>
