@@ -53,8 +53,9 @@ export const Otp = (props, text) => {
                 </div>
 
                 <div style={{width: '48rem', }}>
-                  <button className="otpcontinue-button" onClick={handleOpen}> Continue</button>
+                  <button className="otp-continue-button" onClick={handleOpen}> Continue</button>
                   <Modal
+                  className="success-modal"
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"

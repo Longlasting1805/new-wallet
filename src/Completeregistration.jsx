@@ -9,9 +9,9 @@ import { useNavigate } from "react-router-dom";
 export const Completeregistration = (props) => {
 
     const [selectValues, setSelectValues] = useState({
-        nin: "",
-        driverslicence: "",
-        voterscard: ""
+        nin: "nin",
+        driverslicence: "driverslicence",
+        voterscard: "voterscard"
     })
     const [nine, setNine] = useState('');
     // const [driverslicence, setDriversLicence] = useState('');

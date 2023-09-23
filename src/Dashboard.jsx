@@ -64,8 +64,9 @@ export const Dashboard = (props) => {
               <div className="card-container">
                 <div className="cards">
                   <div>
-                    <img src={imgUrl3} />
+                    <img onClick={() => navigate("/dashboard")} src={imgUrl3} />
                     <p className="card-text">Cards</p>
+
                   </div>
                   <div>
                     <img src={imgUrl4} />

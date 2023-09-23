@@ -54,7 +54,7 @@ export const Register = (props) => {
                     {/* <label htmlFor="password">password</label> */}
                     <input className="register-input" value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Password:" id="password" name="password"/>
                     <div className="no-account">
-          <p>
+          <p className="alreadyhave-acc">
             Already have an account?
           </p>
           <p className="already-have-acc-btn"

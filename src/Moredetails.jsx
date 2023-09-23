@@ -36,7 +36,7 @@ export const Moredetails = (props) => {
                     <input className="phonenumber" value={phonenumber}  onChange={(e) => setPhonenumber(e.target.value)} placeholder="Phone Number"/>
                     <input className="relationship" value={relationship}  onChange={(e) => setRelationship(e.target.value)} placeholder="Relationship"/>
                 <div>
-                <hr className="line"></hr>
+                <hr className="line2"></hr>
                 <p className="bvn">BVN</p>
                 <input className="bvn-input" value={bvn}  onChange={(e) => setBvn(e.target.value)} placeholder="BVN"/>
                 </div>
