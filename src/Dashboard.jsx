@@ -13,9 +13,9 @@ import imgUrl11 from "./assets/ellipse22.jpg";
 import imgUrl12 from "./assets/user.jpg";
 import imgUrl13 from "./assets/bell.jpg";
 import imgUrl14 from "./assets/eye.jpg";
-import imgUrl16 from  "./assets/arrow.jpg"
+import imgUrl16 from "./assets/arrow.jpg";
 import { useNavigate } from "react-router-dom";
-
+import { Tab } from "./components/Tab";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
@@ -24,16 +24,22 @@ export const Dashboard = (props) => {
   const [visible, setVisible] = useState(false);
   const isamount = "10,000";
   const [currentPage, setCurrentPage] = useState(1);
+  const [totalpages, setTotalPages] = useState(6);
   //   const [pass, setPass] = useState("");
 
   const toggleEyeVisibility = () => {
     setVisible(!visible);
   };
 
+  const totalNumberOfPages = () => {
+    setTotalPages(totalpages);
+  };
+
   const handleImageClick = () => {
-    setCurrentPage(prevPage => {
-      if (prevPage >= totalNumberOfPages) {  // Set this value to the total number of pages/views
-        return 1;  // Go back to the first page
+    setCurrentPage((prevPage) => {
+      if (prevPage >= totalNumberOfPages) {
+        // Set this value to the total number of pages/views
+        return 1; // Go back to the first page
       }
       return prevPage + 1;
     });
@@ -44,80 +50,97 @@ export const Dashboard = (props) => {
     // console.log(email);
   };
 
-    const navigate = useNavigate();
-    const displayValue = amount ? isamount : "*".repeat(amount.length);
+  const navigate = useNavigate();
+  const displayValue = amount ? isamount : "*".repeat(amount.length);
+
+  const [tab, setTab] = useState("cards");
+
+  const handleTabChange = (newTab) => {
+    setTab(newTab);
+  };
+  const tabs = [
+    {
+      name: "cards",
+      image: imgUrl3,
+    },
+    {
+      name: "Spend",
+      image: imgUrl4,
+    },
+    {
+      name: "Help",
+      image: imgUrl5,
+    },
+    {
+      name: "Airtime",
+      image: imgUrl6,
+    },
+  ];
+
+  console.log("tab", tab);
+
+  console.log(tab === "cards")
 
   return (
-           <div className="card-div"> 
-            <div className="card-background">
-              <div className="top-card">
-                <p className="name">Hi, Ken</p>
-                <img src={imgUrl12} />
-              </div>
-              <div className="balance">
-                <div className="total-balance">
-                <p className="total">Total balance</p>
-                <img src={imgUrl13} />
-                </div>
-                <div className="money-div">
-                  <div className="total-balance">
-                    
-                  <p  className="money" > <span>&#8358;</span>{visible ? "10,000":"*****"}</p>
-                  <img type={visible ? "text" : "password"} 
-                  onClick={toggleEyeVisibility} 
-                  src={imgUrl14}
-                   style={{ cursor: "pointer" }}
-                  />
-                  </div>
-                </div>
-              </div>
-              <div className="card-container">
-                <div className="cards">
-                  {currentPage === 1 && (
-                    <div>
-                    <img  src={imgUrl3} onClick={handleImageClick} />
-                    <p className="card-text">Cards</p>
+    <div className="card-div">
+      <div className="card-background">
+        <div className="top-card">
+          <p className="name">Hi, Ken</p>
+          <img src={imgUrl12} />
+        </div>
+        <div className="balance">
+          <div className="total-balance">
+            <p className="total">Total balance</p>
+            <img src={imgUrl13} />
+          </div>
+          <div className="money-div">
+            <div className="total-balance">
+              <p className="money">
+                {" "}
+                <span>&#8358;</span>
+                {visible ? "10,000" : "*****"}
+              </p>
+              <img
+                type={visible ? "text" : "password"}
+                onClick={toggleEyeVisibility}
+                src={imgUrl14}
+                style={{ cursor: "pointer" }}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="card-container">
+          <div className="cards">
+            {tabs.map((tab, index) => (
+              <Tab key={index} tab={tab} handleTabChange={handleTabChange} />
+            ))}
+          </div>
+         
+          
+        </div>
+       
 
-                  </div>
-                  )}
-
-                  {currentPage === 2 && (
-                    <div>
-                    <img src={imgUrl4} onClick={handleImageClick}/>
-                    <p className="spend-text">Spend</p>
-                  </div>
-                  )}
-                  
-                  {currentPage === 3 && (
-                     <div>
-                     <img src={imgUrl5} onClick={handleImageClick}/>
-                     <p className="help-text">Help</p>
-                   </div>
-                  )}
-                 
-                 {currentPage === 4 &&(
-                   <div>
-                   <img src={imgUrl6} onClick={handleImageClick}/>
-                   <p className="airtime-text">Airtime</p>
-                 </div>
-                 )}
-                 {currentPage === 5 && (
-                   <div>
-                   <img src={imgUrl7} onClick={handleImageClick}/>
-                   <p className="save-text">Save</p>
-                 </div>
-                 )}
-                 
-                </div>
-
-                {currentPage === 6 && (
-                  <div>
-                  <img className="arrow" src={imgUrl16} onClick={handleImageClick}/>
-                </div>
-                )}
-                
-              </div>
+        <div className="card-container">
+            {tab === "cards" && (
               <div>
+                <p className="card-text">cards comp</p>
+              </div>
+            )}
+             {tab === "Spend" && (
+              <div>
+                <p className="card-text">Spend comp</p>
+              </div>
+            )}
+
+             {tab === "Airtime" && (
+              <div>
+                <p className="card-text">Airtime comp</p>
+              </div>
+            )}
+            
+          </div>
+
+        {/* <div>
                 <p className="trans">Recent transaction</p>
                 <div>
                   <div className="recent-trans">
@@ -181,11 +204,8 @@ export const Dashboard = (props) => {
                       <p className="up-keep">N5,000</p>
                     </div>
                   </div>
-                </div>
-              
-            </div>
-            </div>
-            
-         
+                </div> */}
+      </div>
+    </div>
   );
 };
