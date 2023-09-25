@@ -109,9 +109,13 @@ export const Dashboard = (props) => {
                  )}
                  
                 </div>
-                <div>
-                  <img className="arrow" src={imgUrl16} />
+
+                {currentPage === 6 && (
+                  <div>
+                  <img className="arrow" src={imgUrl16} onClick={handleImageClick}/>
                 </div>
+                )}
+                
               </div>
               <div>
                 <p className="trans">Recent transaction</p>
