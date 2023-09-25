@@ -23,10 +23,20 @@ export const Dashboard = (props) => {
   const [amount, setAmount] = useState("");
   const [visible, setVisible] = useState(false);
   const isamount = "10,000";
+  const [currentPage, setCurrentPage] = useState(1);
   //   const [pass, setPass] = useState("");
 
   const toggleEyeVisibility = () => {
     setVisible(!visible);
+  };
+
+  const handleImageClick = () => {
+    setCurrentPage(prevPage => {
+      if (prevPage >= totalNumberOfPages) {  // Set this value to the total number of pages/views
+        return 1;  // Go back to the first page
+      }
+      return prevPage + 1;
+    });
   };
 
   const handleSubmit = (e) => {
@@ -41,7 +51,7 @@ export const Dashboard = (props) => {
            <div className="card-div"> 
             <div className="card-background">
               <div className="top-card">
-                <p className="name">Hi, Chibuzor</p>
+                <p className="name">Hi, Ken</p>
                 <img src={imgUrl12} />
               </div>
               <div className="balance">
@@ -63,27 +73,41 @@ export const Dashboard = (props) => {
               </div>
               <div className="card-container">
                 <div className="cards">
-                  <div>
-                    <img onClick={() => navigate("/dashboard")} src={imgUrl3} />
+                  {currentPage === 1 && (
+                    <div>
+                    <img  src={imgUrl3} onClick={handleImageClick} />
                     <p className="card-text">Cards</p>
 
                   </div>
-                  <div>
-                    <img src={imgUrl4} />
+                  )}
+
+                  {currentPage === 2 && (
+                    <div>
+                    <img src={imgUrl4} onClick={handleImageClick}/>
                     <p className="spend-text">Spend</p>
                   </div>
-                  <div>
-                    <img src={imgUrl5} />
-                    <p className="help-text">Help</p>
-                  </div>
-                  <div>
-                    <img src={imgUrl6} />
-                    <p className="airtime-text">Airtime</p>
-                  </div>
-                  <div>
-                    <img src={imgUrl7} />
-                    <p className="save-text">Save</p>
-                  </div>
+                  )}
+                  
+                  {currentPage === 3 && (
+                     <div>
+                     <img src={imgUrl5} onClick={handleImageClick}/>
+                     <p className="help-text">Help</p>
+                   </div>
+                  )}
+                 
+                 {currentPage === 4 &&(
+                   <div>
+                   <img src={imgUrl6} onClick={handleImageClick}/>
+                   <p className="airtime-text">Airtime</p>
+                 </div>
+                 )}
+                 {currentPage === 5 && (
+                   <div>
+                   <img src={imgUrl7} onClick={handleImageClick}/>
+                   <p className="save-text">Save</p>
+                 </div>
+                 )}
+                 
                 </div>
                 <div>
                   <img className="arrow" src={imgUrl16} />
