@@ -974,15 +974,53 @@ align-items: center;
   display: flex;
   gap: 35px
 }
+
+.cards-view{
+  margin-top: 10%;
+  
+}
+.view-text{
+  color: #726D6D;
+  background-color: white; 
+  padding:.5rem 1rem; 
+  margin: 10px 0;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+  margin: auto;
+  margin-top: 5px;
+  /* box-shadow: 5px 5px rgba(0, 0, 0, 0.04); */
+}
+
+.viewdelete-text{
+  color: rgb(227, 81, 81);
+  background-color: white; 
+  padding:.5rem 1rem; 
+  margin: 10px 0;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+  margin: auto;
+  margin-top: 5px;
+}
+
 .card-text{
   color: #726D6D;
-text-align: center;
-font-family: Roboto;
-font-size: 14.17px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
 }
+
+.back-link{
+  margin-right: 22rem;
+  font-size: 15.17px;
+}
+
 
 .spend-text{
   color: #726D6D;
@@ -1629,6 +1667,12 @@ formchild {
 
 .view-card{
   color:  #726D6D;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
   .top-card{

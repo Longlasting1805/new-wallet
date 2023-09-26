@@ -14,6 +14,9 @@ import imgUrl12 from "./assets/user.jpg";
 import imgUrl13 from "./assets/bell.jpg";
 import imgUrl14 from "./assets/eye.jpg";
 import imgUrl16 from "./assets/arrow.jpg";
+import imgUrl17 from "./assets/deleteicon.jpg";
+import imgUrl18 from "./assets/addicon.jpg";
+import imgUrl19 from "./assets/dropdownicon.jpg";
 import { useNavigate } from "react-router-dom";
 import { Tab } from "./components/Tab";
 
@@ -87,10 +90,6 @@ export const Dashboard = (props) => {
     },
   ];
 
-  console.log("tab", tab);
-
-  console.log(tab === "cards")
-
   return (
     <div className="card-div">
       <div className="card-background">
@@ -132,40 +131,62 @@ export const Dashboard = (props) => {
 
         <div className="tab-container">
             {tab === "cards" && (
-              <div>
-                <p className="view-card">View Existing Cards</p>
-                <p className="edit-card">Edit card information</p>
-                <p className="new-card">Add new card</p>
-                <p className="delete-card">delete card</p>
+              <div className="cards-view">
+                <div className="view-text">
+                  <p>View Existing Cards</p>
+                  </div>
+                <div className="view-text">Edit card information</div>
+                <div className="view-text">
+                  <p>Add new card</p>
+                  <img src={imgUrl18} alt="" />
+                  </div>
+                  <div className="viewdelete-text">
+                  <p>Delete card</p>
+                  <img src={imgUrl17} alt="" />
+                  </div>
+                  <a href="" className="back-link" >back</a>
+
               </div>
             )}
              {tab === "Spend" && (
               <div>
-                <p className="card-text">Spend comp</p>
+                 <div className="view-text">
+                  <p>Choose Account</p>
+                  </div>
+                <div className="view-text">Enter Amount:</div>
+                <div className="view-text">
+                  <p>Enter Account Number:</p>
+                  <img src={imgUrl18} alt="" />
+                  </div>
+                  <div className="viewdelete-text">
+                  <p>Enter Description</p>
+                  <img src={imgUrl17} alt="" />
+                  </div>
+                  <a href="" className="back-link" >back</a>
               </div>
             )}
 
              {tab === "Help" && (
               <div>
-                <p className="card-text">Help comp</p>
+                <p className="help-text">Help comp</p>
               </div>
             )}
 
              {tab === "Airtime" && (
               <div>
-                <p className="card-text">Airtime comp</p>
+                <p className="airtime-text">Airtime comp</p>
               </div>
             )}
 
              {tab === "Save" && (
               <div>
-                <p className="card-text">Save comp</p>
+                <p className="save-text">Save comp</p>
               </div>
             )}
 
              {tab === "Arrow" && (
               <div>
-                <p className="card-text">Arrow comp</p>
+                <p className="arrow-text">Arrow comp</p>
               </div>
             )}
             
