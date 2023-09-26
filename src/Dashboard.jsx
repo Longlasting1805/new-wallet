@@ -30,37 +30,19 @@ export const Dashboard = (props) => {
   const [amount, setAmount] = useState("");
   const [visible, setVisible] = useState(false);
   const isamount = "10,000";
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalpages, setTotalPages] = useState(6);
-  //   const [pass, setPass] = useState("");
 
   const toggleEyeVisibility = () => {
     setVisible(!visible);
   };
 
-  const totalNumberOfPages = () => {
-    setTotalPages(totalpages);
-  };
-
-  const handleImageClick = () => {
-    setCurrentPage((prevPage) => {
-      if (prevPage >= totalNumberOfPages) {
-        // Set this value to the total number of pages/views
-        return 1; // Go back to the first page
-      }
-      return prevPage + 1;
-    });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(email);
   };
 
   const navigate = useNavigate();
   const displayValue = amount ? isamount : "*".repeat(amount.length);
 
-  const [tab, setTab] = useState("cards");
+  const [tab, setTab] = useState("");
 
   const handleTabChange = (newTab) => {
     setTab(newTab);
@@ -221,11 +203,12 @@ export const Dashboard = (props) => {
                   <p className="network-p">View Savings</p>
                   <img className="dropdownimg" src={imgUrl19} alt="" />
                   </div>
+                  <a href="" className="nextspend-link" >next</a>
               </div>
             )}
 
-             {tab === "Arrow" && (
-              <div>
+             {tab === "" && (
+              <div className="arrow-views">
                 <div>
                 <p className="trans">Recent transaction</p>
                 <div>
