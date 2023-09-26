@@ -191,8 +191,19 @@ export const Dashboard = (props) => {
             )}
 
              {tab === "Airtime" && (
-              <div>
-                <p className="airtime-text">Airtime comp</p>
+              <div className="airtime-views">
+                 <div className="view-text">
+                  <p className="network-p">Select Network</p>
+                  <img className="dropdownimg" src={imgUrl19} alt="" />
+                  </div>
+                  <div className="view-text">
+                     <p className="amount-p">Enter Phone Number</p>
+                  </div>
+                <div className="view-text">
+                  <p className="amount-p">Enter Amount</p>
+                  {/* <img src={imgUrl18} alt="" /> */}
+                  </div>
+                  <a href="" className="nextspend-link" >next</a>
               </div>
             )}
 
