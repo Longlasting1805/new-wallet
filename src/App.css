@@ -404,11 +404,27 @@ button {
   align-items: center;
 }
 
+.chat-p{
+  margin-right: 14rem;
+}
+
+.email-p{
+  margin-right: 12rem;
+}
+
+.call-p{
+  margin-right: 17rem;
+}
+
 .spend-views{
   /* display: flex; */
   justify-content: flex-start;
   align-items: center;
   margin: auto;
+  margin-top: 3rem;
+}
+
+.help-views{
   margin-top: 3rem;
 }
 

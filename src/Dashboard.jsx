@@ -17,6 +17,10 @@ import imgUrl16 from "./assets/arrow.jpg";
 import imgUrl17 from "./assets/deleteicon.jpg";
 import imgUrl18 from "./assets/addicon.jpg";
 import imgUrl19 from "./assets/dropdownicon.jpg";
+import imgUrl20 from "./assets/chatWithUs.png";
+import imgUrl21 from "./assets/email.jpg";
+import imgUrl22 from "./assets/phonecall.jpg";
+
 import { useNavigate } from "react-router-dom";
 import { Tab } from "./components/Tab";
 
@@ -167,8 +171,22 @@ export const Dashboard = (props) => {
             )}
 
              {tab === "Help" && (
-              <div>
-                <p className="help-text">Help comp</p>
+              <div className="help-views">
+                <div className="view-text">
+                <img className="callus" src={imgUrl22} alt="" />
+                  <p className="call-p">Call Us</p>
+                  <img className="dropdownimg" src={imgUrl19} alt="" />
+                  </div>
+                  <div className="view-text">
+                <img className="emailus" src={imgUrl21} alt="" />
+                  <p className="email-p">Send us an Email</p>
+                  <img className="dropdownimg" src={imgUrl19} alt="" />
+                  </div>
+                  <div className="view-text">
+                <img className="chatus" src={imgUrl20} alt="" />
+                  <p className="chat-p">Chat with us</p>
+                  <img className="dropdownimg" src={imgUrl19} alt="" />
+                  </div>
               </div>
             )}
 
