@@ -208,20 +208,25 @@ export const Dashboard = (props) => {
             )}
 
              {tab === "Save" && (
-              <div>
-                <p className="save-text">Save comp</p>
+              <div className="save-views">
+                 <div className="view-text">
+                  <p className="network-p">Choose Saving plan</p>
+                  <img className="dropdownimg" src={imgUrl19} alt="" />
+                  </div>
+                  <div className="view-text">
+                  <p className="network-p">Withdraw Savings</p>
+                  <img className="dropdownimg" src={imgUrl19} alt="" />
+                  </div>
+                  <div className="view-text">
+                  <p className="network-p">View Savings</p>
+                  <img className="dropdownimg" src={imgUrl19} alt="" />
+                  </div>
               </div>
             )}
 
              {tab === "Arrow" && (
               <div>
-                <p className="arrow-text">Arrow comp</p>
-              </div>
-            )}
-            
-          </div>
-
-        {/* <div>
+                <div>
                 <p className="trans">Recent transaction</p>
                 <div>
                   <div className="recent-trans">
@@ -285,7 +290,11 @@ export const Dashboard = (props) => {
                       <p className="up-keep">N5,000</p>
                     </div>
                   </div>
-                </div> */}
+                </div>
+              </div>
+            )}
+            
+          </div>
       </div>
     </div>
   );
