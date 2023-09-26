@@ -75,6 +75,16 @@ export const Dashboard = (props) => {
       name: "Airtime",
       image: imgUrl6,
     },
+
+    {
+      name: "Save",
+      image: imgUrl7,
+    },
+
+    {
+      name: "",
+      image: imgUrl16,
+    },
   ];
 
   console.log("tab", tab);
@@ -120,10 +130,13 @@ export const Dashboard = (props) => {
         </div>
        
 
-        <div className="card-container">
+        <div className="tab-container">
             {tab === "cards" && (
               <div>
-                <p className="card-text">cards comp</p>
+                <p className="view-card">View Existing Cards</p>
+                <p className="edit-card">Edit card information</p>
+                <p className="new-card">Add new card</p>
+                <p className="delete-card">delete card</p>
               </div>
             )}
              {tab === "Spend" && (
@@ -132,9 +145,27 @@ export const Dashboard = (props) => {
               </div>
             )}
 
+             {tab === "Help" && (
+              <div>
+                <p className="card-text">Help comp</p>
+              </div>
+            )}
+
              {tab === "Airtime" && (
               <div>
                 <p className="card-text">Airtime comp</p>
+              </div>
+            )}
+
+             {tab === "Save" && (
+              <div>
+                <p className="card-text">Save comp</p>
+              </div>
+            )}
+
+             {tab === "Arrow" && (
+              <div>
+                <p className="card-text">Arrow comp</p>
               </div>
             )}
             

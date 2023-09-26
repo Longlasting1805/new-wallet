@@ -1626,6 +1626,11 @@ formchild {
   
   }
 
+
+.view-card{
+  color:  #726D6D;
+}
+
   .top-card{
     display: flex;
     flex-direction: row;
