@@ -149,20 +149,20 @@ export const Dashboard = (props) => {
               </div>
             )}
              {tab === "Spend" && (
-              <div>
+              <div className="spend-views">
                  <div className="view-text">
                   <p>Choose Account</p>
+                  <img className="dropdownimg" src={imgUrl19} alt="" />
                   </div>
                 <div className="view-text">Enter Amount:</div>
                 <div className="view-text">
                   <p>Enter Account Number:</p>
-                  <img src={imgUrl18} alt="" />
+                  {/* <img src={imgUrl18} alt="" /> */}
                   </div>
-                  <div className="viewdelete-text">
-                  <p>Enter Description</p>
-                  <img src={imgUrl17} alt="" />
+                  <div className="spend-description">Enter Description:
+                  {/* <p className="spend-description">Enter Description</p> */}
                   </div>
-                  <a href="" className="back-link" >back</a>
+                  <a href="" className="nextspend-link" >next</a>
               </div>
             )}
 

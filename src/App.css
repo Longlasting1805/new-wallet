@@ -404,6 +404,14 @@ button {
   align-items: center;
 }
 
+.spend-views{
+  /* display: flex; */
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+
 .cardname {
   width: 300px;
   height: 60px;
@@ -994,6 +1002,33 @@ align-items: center;
   margin: auto;
   margin-top: 5px;
   /* box-shadow: 5px 5px rgba(0, 0, 0, 0.04); */
+}
+
+.nextspend-link{
+  margin-left: 22rem;
+}
+
+.dropdownimg{
+  width: 3%;
+  height: 20%;
+  margin-top: 2%;
+}
+
+.spend-description{
+  height: 90px;
+  color: #726D6D;
+  background-color: white; 
+  padding:.5rem 1rem; 
+  margin: 10px 0;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+  margin: auto;
+  margin-top: 5px;
 }
 
 .viewdelete-text{
