@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import imgUrl from './assets/webpix1.jpg'
+import axios from 'axios';
 import Modal from '@mui/material/Modal';
 import { Box, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -33,6 +34,18 @@ export const Register = (props) => {
     }
 
     const navigate = useNavigate()
+
+    useEffect(() => {
+        axios.get('https://jsonplaceholder.typicode.com/posts')
+          .then(response => {
+            setData(response.data);
+            setLoading(false);
+          })
+          .catch(error => {
+            console.error("There was an error fetching data", error);
+            setLoading(false);
+          });
+      }, []);
 
     return (
         <div className="auth-form-container">

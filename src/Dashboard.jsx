@@ -119,7 +119,8 @@ export const Dashboard = (props) => {
             {tab === "cards" && (
               <div className="cards-view">
                 <div className="view-text">
-                  <p>View Existing Cards</p>
+                  <p onclick="toggleDropdown()" >View Existing Cards</p>
+                  
                   </div>
                 <div className="view-text">Edit card information</div>
                 <div className="view-text">
