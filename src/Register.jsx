@@ -22,6 +22,10 @@ export const Register = (props) => {
     const [pass, setPass] = useState('');
     const [firstname, setFirstName] = useState('');
     const [lastname, setLastName] = useState('');
+    const [data, setData] = useState('');
+    const [loading, setLoading] = useState('');
+
+
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
