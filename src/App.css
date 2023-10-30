@@ -1213,12 +1213,12 @@ line-height: normal;
 }
 .time{
   color: rgba(114, 109, 109, 0.70);
-text-align: center;
-font-family: Roboto;
-font-size: 11.17px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 11.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .water-time{
   padding-top: 17px;
@@ -1551,7 +1551,7 @@ formchild {
     width: 24%;
     border-radius: 13.618px;
     border: 1.702px solid #56229e;
-    background: #55229e;
+    background: #56219f;
     margin-top: 15px;
     color: #fff;
     text-align: center;

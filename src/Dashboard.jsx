@@ -109,12 +109,8 @@ export const Dashboard = (props) => {
             {tabs.map((tab, index) => (
               <Tab key={index} tab={tab} handleTabChange={handleTabChange} />
             ))}
-          </div>
-         
-          
+          </div>  
         </div>
-       
-
         <div className="tab-container">
             {tab === "cards" && (
               <div className="cards-view">
