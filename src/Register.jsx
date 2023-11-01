@@ -26,7 +26,6 @@ export const Register = (props) => {
     const [loading, setLoading] = useState('');
 
 
-
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -39,17 +38,28 @@ export const Register = (props) => {
 
     const navigate = useNavigate()
 
-    useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
-          .then(response => {
-            setData(response.data);
-            setLoading(false);
-          })
-          .catch(error => {
-            console.error("There was an error fetching data", error);
-            setLoading(false);
-          });
-      }, []);
+    const registerDetail = async () => {
+      try {
+        const registerData = {
+          username: email,
+          password: pass,
+          firstname: firstname,
+          lastname: lastname
+        }
+
+
+
+        const response = await axios.get('', 
+        registerData, 
+        {headers: {'Content-Type': 'application/json'}})
+        if (response.status === 200) registerData(response.data)
+  
+      } catch (error) {
+        console.error('error', error)
+      }
+    }
+  
+    useEffect (() => { registerDetail() }, [])
 
     return (
         <div className="auth-form-container">

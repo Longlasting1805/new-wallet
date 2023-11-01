@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import imgUrl from "./assets/webpix.jpg";
 import { Checkbox } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -8,6 +8,8 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 export const Login = (props) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +17,24 @@ export const Login = (props) => {
   };
 
   const navigate = useNavigate();
+
+  const loginDetails = async () => {
+    try {
+      const loginData = {
+        username: email,
+        password: pass
+      }
+      const response = await axios.get('', 
+      loginData, 
+      {headers: {'Content-Type': 'application/json'}})
+      if (response.status === 200) loginData(response.data)
+
+    } catch (error) {
+      console.error('error', error)
+    }
+  }
+
+  useEffect (() => { loginDetails() }, [])
 
   return (
     <div className="auth-form-container">
