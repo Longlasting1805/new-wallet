@@ -20,6 +20,11 @@ import imgUrl19 from "./assets/dropdownicon.jpg";
 import imgUrl20 from "./assets/chatWithUs.png";
 import imgUrl21 from "./assets/email.jpg";
 import imgUrl22 from "./assets/phonecall.jpg";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 import { useNavigate } from "react-router-dom";
 import { Tab } from "./components/Tab";
@@ -115,7 +120,19 @@ export const Dashboard = (props) => {
             {tab === "cards" && (
               <div className="cards-view">
                 <div className="view-text">
-                  <p onclick="toggleDropdown()" >View Existing Cards</p>
+
+                  <Accordion className="card-according">
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                  >
+                   View Existing Cards
+                  </AccordionSummary>
+                  <AccordionDetails>
+                  View Existing Cards
+                  </AccordionDetails>
+                </Accordion>
                   
                   </div>
                 <div className="view-text">Edit card information</div>

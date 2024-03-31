@@ -416,12 +416,14 @@ button {
   margin-right: 17rem;
 }
 
+
 .spend-views{
   /* display: flex; */
   justify-content: flex-start;
   align-items: center;
   margin: auto;
   margin-top: 3rem;
+  cursor: pointer;
 }
 
 .save-views{
@@ -933,8 +935,9 @@ input {
  background-image: url('./assets/WebdashboardPage.jpg');
  background-size: cover;
  background-repeat: no-repeat;
-height: 100vh;
-width: 100%;
+ height: 100vh;
+ width: 100%;
+ 
 }
 
 .card-background{
@@ -1756,6 +1759,17 @@ formchild {
     justify-content: space-between;
     flex-shrink: 0;
     align-items: center;
+  }
+
+  .card-according{
+    font-weight: 400;
+    /* font-size: 10.17px; */
+    height: 10px;
+    color: blue;
+  }
+
+  .card-accordingsummary{
+    color: blue;
   }
   
     
