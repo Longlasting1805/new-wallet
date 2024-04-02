@@ -120,23 +120,22 @@ export const Dashboard = (props) => {
             {tab === "cards" && (
               <div className="cards-view">
                 <div className="view-text">
-
-                  <Accordion className="card-according">
+                   <Accordion className="card-accordion">
                   <AccordionSummary
+                  className="card-accordingsummary"
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1-content"
                     id="panel1-header"
                   >
-                   View Existing Cards
+                  View Existing Cards
                   </AccordionSummary>
                   <AccordionDetails>
                   View Existing Cards
                   </AccordionDetails>
-                </Accordion>
-                  
-                  </div>
-                <div className="view-text">Edit card information</div>
-                <div className="view-text">
+                  </Accordion>                  
+                </div>
+              <div className="view-text">Edit card information</div>
+              <div className="view-text">
                   <p>Add new card</p>
                   <img src={imgUrl18} alt="" />
                   </div>
