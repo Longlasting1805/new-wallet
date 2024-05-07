@@ -24,12 +24,26 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Divider from '@mui/material/Divider';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 
 
 import { useNavigate } from "react-router-dom";
 import { Tab } from "./components/Tab";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+const style = {
+  py: 0,
+  width: '100%',
+  maxWidth: 360,
+  borderRadius: 2,
+  border: '1px solid',
+  borderColor: 'divider',
+  backgroundColor: 'background.paper',
+};
 
 export const Dashboard = (props) => {
   const [amount, setAmount] = useState("");
@@ -97,8 +111,8 @@ export const Dashboard = (props) => {
             <div className="total-balance">
               <p className="money">
                 {" "}
-                <span>&#8358;</span>
-                {visible ? "10,000" : "*****"}
+                <span>${}</span>
+                {visible ? "31,000,000" : "*****"}
               </p>
               <img
                 type={visible ? "text" : "password"}
@@ -121,23 +135,89 @@ export const Dashboard = (props) => {
               <div className="cards-view">
                 <div className="view-text">
                    <Accordion className="card-accordion">
-                  <AccordionSummary
-                  className="card-accordingsummary"
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                  >
-                  View Existing Cards
-                  </AccordionSummary>
-                  <AccordionDetails>
-                  View Existing Cards
-                  </AccordionDetails>
+                   <AccordionSummary>
+                      View existing card
+                   </AccordionSummary>
+                   <AccordionDetails>
+                   <List sx={style}>
+                      <ListItem>
+                        <ListItemText primary="Card Name: " />
+                      </ListItem>
+                      <Divider component="li" />
+                      <ListItem>
+                        <ListItemText primary="Card Number: " />
+                      </ListItem>
+                      <Divider variant="inset" component="li" />
+                      <ListItem>
+                        <ListItemText primary="Expiry Date: " />
+                      </ListItem>
+                      <Divider variant="middle" component="li" />
+                      <ListItem>
+                        <ListItemText primary="CVV: " />
+                      </ListItem>
+                    </List>
+                   </AccordionDetails>
+                  
                   </Accordion>                  
                 </div>
-              <div className="view-text">Edit card information</div>
               <div className="view-text">
-                  <p>Add new card</p>
-                  <img src={imgUrl18} alt="" />
+
+              <Accordion className="card-accordion">
+                   <AccordionSummary>
+                      Edit card information
+                   </AccordionSummary>
+                   <AccordionDetails>
+                   <List sx={style}>
+                      <ListItem>
+                        <ListItemText primary="Card Name: " />
+                      </ListItem>
+                      <Divider component="li" />
+                      <ListItem>
+                        <ListItemText primary="Card Number: " />
+                      </ListItem>
+                      <Divider variant="inset" component="li" />
+                      <ListItem>
+                        <ListItemText primary="Expiry Date: " />
+                      </ListItem>
+                      <Divider variant="middle" component="li" />
+                      <ListItem>
+                        <ListItemText primary="CVV: " />
+                      </ListItem>
+                    </List>
+                   </AccordionDetails>
+                  
+                  </Accordion>  
+              </div>
+              <div className="view-text">
+              <Accordion className="card-accordion">
+                   <AccordionSummary>
+                      Add new card
+                    <img src={imgUrl18} alt=""  className="pluss-add"/>
+                   </AccordionSummary>
+                   <AccordionDetails>
+                   <List sx={style}>
+                      <ListItem>
+                        <ListItemText primary="Card Name: " />
+                      </ListItem>
+                      <Divider component="li" />
+                      <ListItem>
+                        <ListItemText primary="Card Number: " />
+                      </ListItem>
+                      <Divider variant="inset" component="li" />
+                      <ListItem>
+                        <ListItemText primary="Exp. Date: " />
+                      </ListItem>
+                      <Divider variant="middle" component="li" />
+                      <ListItem>
+                        <ListItemText primary="CVV: " />
+                      </ListItem>
+                    </List>
+                   </AccordionDetails>
+                  
+                  
+                  </Accordion>  
+                
+                  
                   </div>
                   <div className="viewdelete-text">
                   <p>Delete card</p>
@@ -235,7 +315,7 @@ export const Dashboard = (props) => {
                       <p className="time">10:00 am</p>
                     </div>
                     <div className="cash">
-                      <p>-N1,000</p>
+                      <p>-$12,000</p>
                     </div>
                   </div>
                 </div>

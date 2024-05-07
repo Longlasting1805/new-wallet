@@ -1761,6 +1761,10 @@ formchild {
     align-items: center;
   }
 
+  .pluss-add{
+    margin-right: 70rem;
+  }
+
   .card-accordion{
     font-weight: 400;
     /* font-size: 10.17px; */
