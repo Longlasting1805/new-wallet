@@ -33,9 +33,6 @@ function App() {
        <Route path="/forgotpasswordotp" element={<Forgotpasswordotp />}/>
        <Route path="/newpassword" element={<Newpassword />}/>
        <Route path="/dashboard" element={<Dashboard />}/>
-
-             
-       
        
        </Routes>
 

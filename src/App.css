@@ -736,6 +736,14 @@ input {
   cursor: pointer;
 }
 
+.click-signup {
+  color: #55229e;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
 .alreadyhave-acc{
   color: #55229e;
   text-decoration: underline;
@@ -1014,7 +1022,7 @@ align-items: center;
 
 .user-img{
   width: 10%;
-  margin-left: 15rem;
+  margin-left: 15rem;  
   margin-bottom: 0rem;
 }
 
@@ -1229,553 +1237,189 @@ line-height: normal;
 }
 .register-div {
   height: 100vh;
-  width: 30%;
+  width: 50%;
+}
+
+.otp-continue-button {
+  width: 24%;
+  border-radius: 13.618px;
+  border: 1.702px solid #56229e;
+  background: #56219f;
+  margin-top: 15px;
+  color: #fff;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 @media only screen and (max-width: 500px) {
-  .login-div {
-    height: 100vh;
+
+  .auth-form-container{
+    width: 100%;
+    height: 100%;
+  }
+
+  
+   .login-div {
+    height: 50vh;
     width: 50%;
 }
 
-  .login-img {
-  width: 100%;
-  height: 100%;
+  .form { 
+    width: 50%; 
+    height: 40%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 90px; 
+    background: #ffffff;
+} 
+
+ .formchild {
+  width: 50%;
+  height: 50%;
+  margin-left: -40px;
 }
 
-.welcome {
+
+
+   .login-img {
+  width: 100%;
+  height: 200%;
+}
+
+ .welcome {
   font-family: "Roboto", sans-serif;
   color: #000;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 200px;
 }
 
-form {
-  width: 50%;
-  /* height: 70%; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* margin-bottom: 20px; */
-  background: #ffffff;
-}
-
-formchild {
-  width: 60%;
-  /* height: 250%; */
-  /* margin-left: 10px; */
+.welcome-container{
+  margin-bottom: 65%;
+  margin-left: 25%;
 }
 
 .login-dashboad {
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 200px;
+  font-size: 13px;
   font-family: "Roboto", sans-serif;
   color: #000;
-  margin-top: 20px;
+  margin-top: 28px;
+  margin-left: -12%;
+  display: inline;
+  white-space: nowrap;
 }
 
-.login-input {
+.login-input{
   outline: none;
   border: 1px solid #c4c4c4;
-  width: 100%;
-}
+  width: 180%;
+  margin-left: -20px;
+  margin-top: 5px;
 
-.forgot-and-rem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .remember {
   display: flex;
   align-items: center;
+  margin-left: -18%;
+  flex-shrink: 0;
+ 
+} 
+
+.remember-check {
+  left: 9px;
+  position: relative;
 }
 
-@media  screen and (max-width: 768px) {
-  .login-img {
-    width: 50%;
-    height: 50%;
-  }
-
-  .welcome {
-    font-family: "Roboto", sans-serif;
-    color: #000;
-    font-size: 30px;
-    font-weight: 500;
-  }
-
-  .login-dashboad {
-    font-weight: 400;
-    font-size: 10px;
-    font-family: "Roboto", sans-serif;
-    color: #000;
-    margin-top: 20px;
-  }
-
-  .login-input {
-    outline: none;
-    border: 1px solid #c4c4c4;
-    width: 300%;
-  }
-
-  .remember {
-    display: flex;
-    align-items: center;
-  }
-
-  .remember-box {
-    color: rgba(0, 0, 0, 0.6);
-    /* font-family: Roboto; */
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .forgotp {
-    color: rgba(0, 0, 0, 0.6);
-    /* font-family: Roboto; */
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-  }
-
-  .login-btn {
-    width: 200%;
-    border-radius: 13.618px;
-    border: 1.702px solid #56229e;
-    background: #55229e;
-    margin-top: 15px;
-    color: #fff;
-    text-align: center;
-    /* font-family: Roboto; */
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .no-account {
-    display: flex;
-    justify-content: space-between;
-    font-size: 5px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: #c4c4c4;
-    margin-top: 10px;
-  }
-
-  .dont-have-acc-btn {
-    color: #55229e;
-    text-decoration: underline;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .register-img {
-    width: 80%;
-    height: 80%;
-  }
-
-  .register-dashboard {
-    font-weight: 400;
-    font-size: 10px;
-    font-family: "Roboto", sans-serif;
-    color: #000;
-    margin-top: 20px;
-  }
-
-  .register-input {
-    width: 150px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 12.089px;
-    border: 1.511px solid #c4c4c4;
-    background: #fff;
-  }
-
-  .alreadyhave-acc{
-    color: #55229e;
-    text-decoration: underline;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .already-have-acc-btn {
-    color: #55229e;
-    text-decoration: underline;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .signup-btn {
-    width: 110%;
-    border-radius: 13.618px;
-    border: 1.702px solid #56229e;
-    background: #55229e;
-    margin-top: 15px;
-    color: #fff;
-    text-align: center;
-    /* font-family: Roboto; */
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .forgot-img {
-    width: 70%;
-    height: 70%;
-  }
-
-  .reset-password {
-    color: #000;
-    margin-bottom: 80px;
-  }
-
-  .forgot-label {
-    font-weight: 300;
-    font-size: 10x;
-    font-family: "Roboto", sans-serif;
-    color: #000;
-    margin-top: 20px;
-  }
-  
-  .forgot-input {
-    outline: none;
-    border: 1px solid #c4c4c4;
-    width: 80%;
-  }
-
-  .forgot-btn {
-    width: 60%;
-    border-radius: 13.618px;
-    border: 1.702px solid #56229e;
-    background: #55229e;
-    margin-top: 15px;
-    color: #fff;
-    text-align: center;
-    /* font-family: Roboto; */
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .cancel-link {
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    /* color: #C4C4C4; */
-    margin-top: 10px;
-    margin-left: 80px;
-  }
-
-  .forgototp-img {
-    width: 100px;
-    height: 40%;
-  }
-
-  .otp-label {
-    font-family: "Roboto", sans-serif;
-    color: #000;
-    font-size: 10px;
-    font-weight: 150;
-  }
-
-  .forgototp-input {
-    margin-right: 10rem;
-    font-size: 5px;
-  }
-
-  .otpcontinue-button {
-    width: 30%;
-    border-radius: 13.618px;
-    border: 1.702px solid #56229e;
-    background: #55229e;
-    margin-top: 15px;
-    color: #fff;
-    text-align: center;
-    /* font-family: Roboto; */
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .cancelotplink {
-    margin-left: 10rem;
-  }
-
-  .newpasswordimg {
-    width: 90%;
-    height: 90%;
-  }
-
-  .newpasswordlabel {
-    margin-right: 8rem;
-    color: #000;
-    font-size: 60%;
-  }
-
-  .success-box {
-    color: #000;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  } 
-
-  .otp-img {
-    width: 90%;
-    height: 90%;
-  }
-
-  .otp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: -3rem;
-    margin-top: 3rem;
-    font-size: 2px;
-    width: 70%;
-  }
-
-  .otp-continue-button {
-    width: 24%;
-    border-radius: 13.618px;
-    border: 1.702px solid #56229e;
-    background: #56219f;
-    margin-top: 15px;
-    color: #fff;
-    text-align: center;
-    /* font-family: Roboto; */
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .success-modal{
-    margin-right: 28%;
-    /* width: 5%; */
-  }
-
-  .registration-img {
-    width: 60%;
-    height: 90%;
-  }
-
-  .details-img {
-    width: 70%;
-    height: 70%;
-  }
-
-  .details {
-    width: 50%;
-    /* height: 70%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* margin-bottom: 20px; */
-    background: #ffffff;
-  }
-
-  .line {
-    margin-bottom: -3%;
-    margin-right: 41px;
-    /* text-align: left; */
-    width: 159px;
-    color: #6a0bde;
-  }
-
-  .more-details {
-    margin-right: -1rem;
-    /* font-family: 'Roboto', sans-serif; */
-    color: #000;
-    font-weight: 400;
-    font-size: 12px;
-  }
-
-  .nextkin {
-    margin-right: 10rem;
-    margin-bottom: -0rem;
-    /* margin-right: -5rem; */
-    font-family: "Roboto", sans-serif;
-    color: #000;
-    font-weight: 500;
-    font-size: 15px;
-  }
-
-  .fullname {
-    width: 175px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 12.089px;
-    border: 1.511px solid #c4c4c4;
-    background: #fff;
-    margin-left: -2rem;
-  }
-  
-  .email {
-    width: 175px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 12.089px;
-    border: 1.511px solid #c4c4c4;
-    background: #fff;
-    margin-left: -2rem;
-  }
-  
-  .phonenumber {
-    width: 175px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 12.089px;
-    border: 1.511px solid #c4c4c4;
-    background: #fff;
-    margin-left: -2rem;
-  }
-  
-  .relationship {
-    width: 175px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 12.089px;
-    border: 1.511px solid #c4c4c4;
-    background: #fff;
-    margin-left: -2rem;
-  }
-
-  .line2 {
-    margin-bottom: -3%;
-    margin-left: -30px;
-    /* text-align: left; */
-    width: 160px;
-    color: #6a0bde;
-  }
-
-  .bvn {
-    margin-left: -10rem;
-    margin-bottom: -0rem;
-    font-weight: 400;
-    font-size: 15px;
-    font-family: "Roboto", sans-serif;
-    color: #000;
-    margin-top: 20px;
-  }
-
-  .bvn-input {
-    margin-left: 0rem;
-    width: 175px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 12.089px;
-    border: 1.511px solid #c4c4c4;
-    background: #fff;
-    margin-left: -3rem;
-  }
-
-  .continue {
-    /* width: 30%; */
-    width: 175px;
-    border-radius: 13.618px;
-    border: 1.702px solid #56229e;
-    background: #55229e;
-    margin-top: 15px;
-    color: #fff;
-    text-align: center;
-    /* font-family: Roboto; */
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-right: 45px;
-    margin-bottom: 2rem;
-  }
-
-  .prev {
-    margin-left: -6rem;
-  }
-
-  .forgototp-form {
-    display: flex;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    width: 50%;
-    height: 90vh;
-    /* margin: auto; */
-    /* overflow-y: hidden; */
-  }
-  
-  .forgototp-div {
-    height: 100%;
-    width: 15%;
-  }
-
-  .card-div{
-    height: 10%;
-    background-color: #32283f;
-  }
-
-  .card-background{
-    width: 670px;
-    height: 340px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #FFF;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 0px 30px;
-  
-  }
-
-
-.view-card{
-  color:  #726D6D;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 14.17px;
+.remember-box {
+  color: rgba(0, 0, 0, 0.6);
+  /* font-family: Roboto; */
+  font-size: 10px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
-  .top-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-shrink: 0;
-    align-items: center;
-  }
-
-  .pluss-add{
-    margin-right: 70rem;
-  }
-
-  .card-accordion{
-    font-weight: 400;
-    /* font-size: 10.17px; */
-    height: 10px;
-    color: blue;
-  }
-
-  .card-accordingsummary{
-    color: blue;
-  }
-  
-    
+.no-account {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #c4c4c4;
+  margin-top: 12px;
+  flex-shrink: 0;
+  gap: 7px;
 }
+
+.dont-have-acc-btn {
+  color: #55229e;
+  text-decoration: underline;
+  font-weight: 600;
+  /* cursor: pointer; */
+  flex-shrink: 0;
+  margin-left: -12%;
+}
+
+.click-signup {
+  color: #55229e;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.forgot-and-rem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 45%;
+  max-width: 150px;
+  margin-top: 10px;
+  margin-left: -50px;
+  white-space: nowrap;
+  flex-direction: row;
+  gap: 10px;
+  /* padding: 0 20px; */
+}
+
+
+.forgotp {
+  color: rgba(0, 0, 0, 0.6);
+  /* font-family: Roboto; */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+  flex-shrink: 0;
+  
+
+}
+
+.login-btn {
+  width: 160%;
+  border-radius: 13.618px;
+  margin-left: -20px;
+  border: 1.702px solid #56229e;
+  background: #55229e;
+  margin-top: 12px;
+  color: #fff;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+
 }

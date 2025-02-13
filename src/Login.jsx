@@ -45,7 +45,10 @@ export const Login = (props) => {
 
       <div className="form">
         <div className="formchild">
-          <h2 className="welcome">Welcome Back!</h2>
+          <div className="welcome-container">
+            <h2 className="welcome">Welcome Back!</h2>
+          </div> 
+        
           <p className="login-dashboad">Log in to your Dashboard</p>
           <form className="login-form" onSubmit={handleSubmit}>
             {/* <label htmlFor="email">email</label> */}
@@ -67,12 +70,12 @@ export const Login = (props) => {
               placeholder="password:"
               id="password"
               name="password"
-            />
+            />  
 
-            <div style={{ display: "flex" }} className="forgot-and-rem">
+          <div style={{ display: "flex" }} className="forgot-and-rem">
               
             <div className="remember">
-                <Checkbox {...label} defaultChecked />
+                <Checkbox {...label} defaultChecked className="remember-check"/>
                 <p className="remember-box">Remember Me</p>
               </div>
               
@@ -84,10 +87,10 @@ export const Login = (props) => {
             <button className="login-btn" onClick={() => navigate("/dashboard")}>Login</button>
            
           <div className="no-account">
-          <p>
-            Don't have an account?
-          </p>
-          <p className="dont-have-acc-btn"
+            <p className="dont-have-acc-btn">
+              Don't have an account?
+            </p>
+            <p className="click-signup"
             onClick={() => navigate("/register")}>Sign Up</p>
           </div>
           </form>
