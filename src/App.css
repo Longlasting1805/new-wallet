@@ -1327,7 +1327,7 @@ line-height: normal;
 .remember {
   display: flex;
   align-items: center;
-  margin-left: -18%;
+  margin-left: 15%;
   flex-shrink: 0;
  
 } 
