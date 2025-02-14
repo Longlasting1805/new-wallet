@@ -190,10 +190,12 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* gap: 25%; */
 }
 .remember {
   display: flex;
   align-items: center;
+  
 }
 
 .forgototp-form {
@@ -706,7 +708,7 @@ input {
 }
 
 .login-btn {
-  width: 100%;
+  width: 70%;
   border-radius: 13.618px;
   border: 1.702px solid #56229e;
   background: #55229e;
@@ -1379,13 +1381,13 @@ line-height: normal;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 45%;
-  max-width: 150px;
+  width: 40%;
+  max-width: 100px;
   margin-top: 10px;
-  margin-left: -50px;
+  /* margin-left: -1px; */
   white-space: nowrap;
   flex-direction: row;
-  gap: 10px;
+  gap: 7px;
   /* padding: 0 20px; */
 }
 
