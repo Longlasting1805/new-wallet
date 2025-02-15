@@ -1382,7 +1382,7 @@ line-height: normal;
 }
 .forgot-and-rem {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
   min-width: 100px;
@@ -1390,7 +1390,7 @@ line-height: normal;
   text-align: left;
   /* right: 78px;
   position: relative; */
-  /* margin-left: -1px; */
+  margin-left: 27px;
   white-space: nowrap;
   /* flex-direction: row; */
   gap: 5px;
