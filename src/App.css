@@ -1313,8 +1313,8 @@ line-height: normal;
   font-size: 13px;
   font-family: "Roboto", sans-serif;
   color: #000;
-  margin-top: 28px;
-  margin-left: -12%;
+  margin-top: 18px;
+  margin-left: -65%;
   display: inline;
   white-space: nowrap;
 }
@@ -1322,8 +1322,8 @@ line-height: normal;
 .login-input{
   outline: none;
   border: 1px solid #c4c4c4;
-  width: 180%;
-  margin-left: -20px;
+  width: 300%;
+  margin-left: -50px;
   margin-top: 5px;
 
 }
@@ -1362,6 +1362,7 @@ line-height: normal;
   margin-top: 12px;
   flex-shrink: 0;
   gap: 7px;
+  margin-left: -45%;
 }
 
 .dont-have-acc-btn {
@@ -1393,7 +1394,7 @@ line-height: normal;
   margin-left: 27px;
   white-space: nowrap;
   /* flex-direction: row; */
-  gap: 5px;
+  gap: 10px;
   /* padding: 0 20px; */
 }
 
@@ -1412,9 +1413,9 @@ line-height: normal;
 }
 
 .login-btn {
-  width: 160%;
+  width: 290%;
   border-radius: 13.618px;
-  margin-left: -20px;
+  margin-left: -50px;
   border: 1.702px solid #56229e;
   background: #55229e;
   margin-top: 12px;
