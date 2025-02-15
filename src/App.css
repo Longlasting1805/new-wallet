@@ -1382,17 +1382,18 @@ line-height: normal;
 }
 .forgot-and-rem {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 20%;
-  max-width: 100px;
+  width: 50%;
+  min-width: 100px;
   margin-top: 10px;
-  right: 78px;
-  position: relative;
+  text-align: left;
+  /* right: 78px;
+  position: relative; */
   /* margin-left: -1px; */
   white-space: nowrap;
   /* flex-direction: row; */
-  gap: 10px;
+  gap: 5px;
   /* padding: 0 20px; */
 }
 
