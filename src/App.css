@@ -185,16 +185,23 @@ button {
   border-radius: 10px;
   cursor: pointer;
   color: #7439bd;
+  bottom: 40px;
+  position: relative;
 }
 .forgot-and-rem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 25%; */
+  /* gap: 40px; */
+  margin: 35px;
+  margin-top: 3px;
+  
 }
+
 .remember {
   display: flex;
   align-items: center;
+  
   
 }
 
@@ -451,10 +458,6 @@ button {
 .amount-p{
   margin-left: 3rem;
 }
-
-
-
-
 
 .cardname {
   width: 300px;
@@ -736,6 +739,7 @@ input {
   text-decoration: underline;
   font-weight: 600;
   cursor: pointer;
+  margin-left: 15%;
 }
 
 .click-signup {
@@ -744,6 +748,8 @@ input {
   font-weight: 600;
   cursor: pointer;
   flex-shrink: 0;
+  margin-right: 17%;
+
 }
 
 .alreadyhave-acc{
@@ -928,7 +934,12 @@ input {
   font-weight: 400;
   line-height: normal;
   color: #c4c4c4;
-  margin-top: 10px;
+  margin-bottom: -12px;
+  gap: 5px;
+  bottom: 16px;
+  position: relative;
+  
+  
 }
 
 .greeting-card{
@@ -1255,6 +1266,12 @@ line-height: normal;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+
+.remember-check {
+  left: 9px;
+  position: relative;
 }
 
 @media only screen and (max-width: 500px) {
