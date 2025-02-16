@@ -62,15 +62,19 @@ export const Register = (props) => {
     useEffect (() => { registerDetail() }, [])
 
     return (
-        <div className="auth-form-container">
+        <div className="register-auth-form-container">
                 <div className="register-div">
                     <img className="register-img" src={imgUrl}alt="Trulli"/>
                 </div>
 
         
-            <div className="form">
-                <h2 className="welcome">Welcome!</h2>
-                <p className="register-dashboard">Sign up by entering the information below</p>
+            <div className="register-form">
+              <div className="welcome-div">
+              <h2 className="welcome">Welcome!</h2>
+              <p className="register-dashboard">Sign up by entering the information below</p>
+
+              </div>
+               
                 <form  className="register-form"  onSubmit={handleSubmit}>
                     {/* <label htmlFor="firstname">First name</label> */}
                     <input className="register-input" value={firstname}  onChange={(e) => setFirstName(e.target.value)} name="name" id="name" placeholder="First Name:"/>
@@ -80,13 +84,13 @@ export const Register = (props) => {
                     <input className="register-input"  value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email:" id="email" name="email"/>
                     {/* <label htmlFor="password">password</label> */}
                     <input className="register-input" value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Password:" id="password" name="password"/>
-                    <div className="no-account">
-          <p className="alreadyhave-acc">
-            Already have an account?
-          </p>
-          <p className="already-have-acc-btn"
-            onClick={() => navigate("/login")}>Login</p>
-          </div>
+                    <div className="register-no-account">
+                      <p className="alreadyhave-acc">
+                        Already have an account?
+                      </p>
+                      <p className="already-have-acc-btn"
+                        onClick={() => navigate("/login")}>Login</p>
+                    </div>
                     <button className="signup-btn" onClick={handleOpen}> Sign Up</button>
             <Modal
                 open={open}

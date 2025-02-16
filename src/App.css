@@ -37,6 +37,17 @@
   /* overflow-y: hidden; */
 }
 
+.register-auth-form-container{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 100vw;
+  /* height: 90vh; */
+  /* margin: auto; */
+  /* overflow-y: hidden; */
+}
+
 .airtimecard-div{
   display: flex;
   background-color: rgb(201, 199, 199);
@@ -66,6 +77,17 @@
   display: inline;
 } */
 .form {
+  width: 50%;
+  /* height: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  background: #ffffff;
+}
+
+.register-form {
   width: 50%;
   /* height: 70%; */
   display: flex;
@@ -757,6 +779,7 @@ input {
   text-decoration: underline;
   font-weight: 600;
   cursor: pointer;
+  
 }
 
 .newpasswordcontainer {
@@ -813,7 +836,7 @@ input {
   border-radius: 13.618px;
   border: 1.702px solid #56229e;
   background: #55229e;
-  margin-top: 15px;
+  margin-top: 69px;
   color: #fff;
   text-align: center;
   /* font-family: Roboto; */
@@ -936,10 +959,24 @@ input {
   color: #c4c4c4;
   margin-bottom: -12px;
   gap: 5px;
-  bottom: 16px;
+  bottom: 25px;
   position: relative;
   
   
+}
+
+.register-no-account{
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #c4c4c4;
+  margin-bottom: -12px;
+  gap: 125px;
+  bottom: 2px;
+  position: relative;
 }
 
 .greeting-card{
@@ -1445,7 +1482,84 @@ line-height: normal;
   line-height: normal;
 }
 
+/* Register */
 
+.register-auth-form-container{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 100vw;
+  /* height: 90vh; */
+  /* margin: auto; */
+  /* overflow-y: hidden; */
+}
 
+.register-form {
+  width: 50%;
+  /* height: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+
+.register-input {
+  width: 155px;
+  height: 59px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #c4c4c4;
+  background: #fff;
+  
+}
+
+.register-no-account{
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #c4c4c4;
+  margin-bottom: -12px;
+  gap: 36px;
+  right: 28px;
+  bottom: 2px;
+  position: relative;
+
+}
+
+.alreadyhave-acc{
+  color: #55229e;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  
+}
+
+.signup-btn {
+  width: 150%;
+  border-radius: 13.618px;
+  border: 1.702px solid #56229e;
+  background: #55229e;
+  margin-top: 69px;
+  color: #fff;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+}
+
+.welcome-div{
+  position: relative;
+  top: 27px;
+}
 
 }
