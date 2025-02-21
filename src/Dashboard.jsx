@@ -75,10 +75,12 @@ export const Dashboard = (props) => {
       name: "Spend",
       image: imgUrl4,
     },
+
     {
       name: "Help",
       image: imgUrl5,
     },
+
     {
       name: "Airtime",
       image: imgUrl6,
@@ -100,7 +102,7 @@ export const Dashboard = (props) => {
       <div className="card-background">
         <div className="top-card">
           <p className="name">Hi, Ken</p>
-          <img src={imgUrl12} />
+          <img className="dashboard-avatar" src={imgUrl12} />
         </div>
         <div className="balance">
           <div className="total-balance">
@@ -158,9 +160,9 @@ export const Dashboard = (props) => {
                     </List>
                    </AccordionDetails>
                   
-                  </Accordion>                  
+                  </Accordion>
                 </div>
-              <div className="view-text">
+            <div className="view-text">
 
               <Accordion className="card-accordion">
                    <AccordionSummary>
@@ -185,7 +187,6 @@ export const Dashboard = (props) => {
                       </ListItem>
                     </List>
                    </AccordionDetails>
-                  
                   </Accordion>  
               </div>
               <div className="view-text">
@@ -218,7 +219,7 @@ export const Dashboard = (props) => {
                   </Accordion>  
                 
                   
-                  </div>
+                </div>
                   <div className="viewdelete-text">
                   <p>Delete card</p>
                   <img src={imgUrl17} alt="" />
@@ -300,11 +301,11 @@ export const Dashboard = (props) => {
               </div>
             )}
 
-             {tab === "" && (
-              <div className="arrow-views">
+             {tab === "" && ( 
+              <div className="arrow-views"> 
                 <div>
-                <p className="trans">Recent transaction</p>
-                <div>
+                  <p className="trans">Recent transaction</p>
+                <div > 
                   <div className="recent-trans">
                     <div>
                       <p className="date">3-28-2022</p>
