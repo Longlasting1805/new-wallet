@@ -49,7 +49,7 @@ export const Otp = (props, text) => {
             <p className="otp-label" > Enter your OTP number</p>
                 {/* <label htmlFor="otp" style={{ marginLeft: '5rem', marginBottom: '5rem'}}> otp</label> */}
                  <div className="otp">
-                    <MuiOtpInput TextFieldsProps={{ size: 'small', placeholder: '-', type: 'password' }}  value={otp} onChange={handleChange} style={{ width: '300px'}}/>
+                    <MuiOtpInput className="verficationotp-input" TextFieldsProps={{ size: 'small', placeholder: '-', type: 'password' }}  value={otp} onChange={handleChange} style={{ width: '300px'}}/>
                 </div>
 
                 <div style={{width: '48rem', }}>
