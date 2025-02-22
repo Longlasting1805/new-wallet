@@ -1666,4 +1666,59 @@ line-height: normal;
   margin-left: 2rem;
 }
 
+/* Forgot password */
+
+.forgot-div {
+  height: 100vh;
+  width: 100%;
+}
+
+.forgot-img {
+  width: 100%;
+  height: 100%;
+}
+
+.forgot-label {
+  font-weight: 200;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  margin-top: 20px;
+}
+
+.forgot-input {
+  outline: none;
+  border: 1px solid #c4c4c4;
+  width: 85%;
+}
+
+.forgot-btn {
+  width: 85%;
+  border-radius: 13.618px;
+  border: 1.702px solid #56229e;
+  background: #55229e;
+  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+  /* font-family: Roboto; */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cancel-link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* color: #C4C4C4; */
+  margin-top: -30px;
+  margin-left: 133px;
+}
+
+
+
 }
