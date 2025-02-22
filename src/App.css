@@ -1803,4 +1803,11 @@ line-height: normal;
   bottom: 30px;
 }
 
+.newpasswordlabel {
+  margin-right: -0.1rem;
+  color: #000;
+  font-size: 90%;
+  white-space: nowrap;
+}
+
 }
