@@ -50,7 +50,8 @@ export const Completeregistration = (props) => {
         </div>
 
             <p className="kyc">KYC</p>
-            <FormControl fullWidth sx={{marginLeft: "5rem"}}>
+            <div className="select-form-div">
+                  <FormControl fullWidth sx={{marginLeft: "5rem"}}>
                 <p className="select-class">Select a Form of Identification</p>
                 <InputLabel onChange={(e) => setSelectValues({...selectValues, nin:e.target.value})} id="demo-simple-select-label" placeholder="nin"></InputLabel>
                 <InputLabel onChange={(e) => setSelectValues({...selectValues, driverslicence:e.target.value})} id="demo-simple-select-label" placeholder="drivers licence"></InputLabel>
@@ -70,6 +71,9 @@ export const Completeregistration = (props) => {
                 </Select>
                
             </FormControl>
+
+            </div>
+          
             <div>
             <input className="homeaddress" value={homeaddress}  onChange={(e) => setHomeAdress(e.target.value)} placeholder="Home Address"/>
             </div>

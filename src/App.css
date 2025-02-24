@@ -722,7 +722,8 @@ input {
 }
 
 .newpasswordlabel {
-  margin-right: 10rem;
+  margin-right: 2rem;
+  gap: 5rem;
   color: #000;
   font-size: 90%;
 }
@@ -1803,6 +1804,9 @@ line-height: normal;
   bottom: 30px;
 }
 
+
+
+
 /* New Password */
 
 .newpasswordlabel {
@@ -1811,6 +1815,10 @@ line-height: normal;
   font-size: 90%;
   white-space: nowrap;
 }
+
+
+
+
 
 /* verification otp */
 .otp-continue-button {
@@ -1877,6 +1885,64 @@ line-height: normal;
   /* margin: auto; */
   overflow-y: hidden;
 }
+
+.line-div{
+  margin-left: 30%;
+  width: 10;
+}
+
+.kyc {
+  margin-right: 295px;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.line {
+  margin-bottom: -3%;
+  margin-right: 110px;
+  /* text-align: left; */
+  width: 380px;
+  color: #6a0bde;
+}
+
+.select-form-div{
+  margin-right: 160px ;
+}
+
+.homeaddress {
+  width: 300px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12.089px;
+  border: 1.511px solid #c4c4c4;
+  background: #fff;
+  margin-left: -0.1rem;
+}
+
+.lining {
+  width: 450px;
+  margin-top: 1%;
+  margin-right: 80px;
+  color: #6b14d5;
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.carding {
+  margin-left: 2.9rem;
+  width: 300px;
+}
+
+.next {
+  margin-left: 15rem;
+}
+
+
 
 
 
