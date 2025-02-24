@@ -28,14 +28,17 @@ export const Moredetails = (props) => {
                 <div className="details">
                     <p className="more-details">More Details about you!</p>
                     <div className="line-div">
-                    <hr className="line"></hr>
+                    <hr className="detail-line"></hr>
                     </div>
                 <p className="nextkin">Next of Kin</p>
+                <div className="next-of-kin-input">
                     <input className="fullname" value={fullname}  onChange={(e) => setFullName(e.target.value)} placeholder="Full Name"/>
                     <input className="email" value={email}  onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
                     <input className="phonenumber" value={phonenumber}  onChange={(e) => setPhonenumber(e.target.value)} placeholder="Phone Number"/>
                     <input className="relationship" value={relationship}  onChange={(e) => setRelationship(e.target.value)} placeholder="Relationship"/>
-                <div>
+                </div>
+                  
+                <div className="bvn-div">
                 <hr className="line2"></hr>
                 <p className="bvn">BVN</p>
                 <input className="bvn-input" value={bvn}  onChange={(e) => setBvn(e.target.value)} placeholder="BVN"/>
