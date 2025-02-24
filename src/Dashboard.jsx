@@ -249,7 +249,7 @@ export const Dashboard = (props) => {
              {tab === "Help" && (
               <div className="help-views">
                 <div className="view-text">
-                <img className="callus" src={imgUrl22} alt="" />
+                 <img className="callus" src={imgUrl22} alt="" />
                   <p className="call-p">Call Us</p>
                   <img className="dropdownimg" src={imgUrl19} alt="" />
                   </div>

@@ -436,15 +436,15 @@ button {
 }
 
 .chat-p{
-  margin-right: 14rem;
+  margin-right: 9rem;
 }
 
 .email-p{
-  margin-right: 12rem;
+  margin-right: 7rem;
 }
 
 .call-p{
-  margin-right: 17rem;
+  margin-right: 65%;
 }
 
 
@@ -462,7 +462,8 @@ button {
 }
 
 .help-views{
-  margin-top: 3rem;
+  margin-top: 4rem;
+  
 }
 
 .airtime-views{
@@ -1091,6 +1092,11 @@ align-items: center;
   margin-top: 10%;
   
 }
+
+.pluss-add{
+  margin-left: 80px;
+}
+
 .view-text{
   color: #726D6D;
   background-color: white; 
@@ -1102,14 +1108,16 @@ align-items: center;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  width: 25rem;
+  width: 20rem;
   margin: auto;
   margin-top: 5px;
   /* box-shadow: 5px 5px rgba(0, 0, 0, 0.04); */
 }
 
 .nextspend-link{
-  margin-left: 22rem;
+  margin-left: 18rem;
+  position: relative;
+  top: 4px;
 }
 
 .dropdownimg{
@@ -1130,7 +1138,7 @@ align-items: center;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  width: 25rem;
+  width: 20rem;
   margin: auto;
   margin-top: 5px;
 }
@@ -1146,9 +1154,15 @@ align-items: center;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  width: 25rem;
+  width: 20rem;
   margin: auto;
   margin-top: 5px;
+}
+
+.card-accordion{
+  margin-left: 5%;
+  width: 400px;
+  
 }
 
 .card-text{
@@ -1156,8 +1170,10 @@ align-items: center;
 }
 
 .back-link{
-  margin-right: 22rem;
+  margin-right: 18rem;
   font-size: 15.17px;
+  position: relative;
+  top: 5px;
 }
 
 
@@ -1666,7 +1682,7 @@ line-height: normal;
 }
 
 .tab-container{
-  margin-left: 2rem;
+  margin-left: 1.6rem;
 }
 
 /* Forgot password */
@@ -1905,6 +1921,7 @@ line-height: normal;
   /* text-align: left; */
   width: 380px;
   color: #6a0bde;
+  
 }
 
 .select-form-div{
@@ -1978,9 +1995,9 @@ line-height: normal;
 
 .detail-line {
   margin-bottom: -3%;
-  margin-right: 16px;
+  margin-right: 53px;
   /* text-align: left; */
-  width: 200px;
+  width: 190px;
   color: #6a0bde;
 }
 
@@ -2004,43 +2021,43 @@ line-height: normal;
 }
 
 .fullname {
-  width: 200px;
+  width: 150px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 12.089px;
   border: 1.511px solid #c4c4c4;
   background: #fff;
-  margin-left: -3rem;
+  margin-left: -2.4rem;
 }
 
 .email {
-  width: 200px;
+  width: 150px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 12.089px;
   border: 1.511px solid #c4c4c4;
   background: #fff;
-  margin-left: -3rem;
+  margin-left: -2.4rem;
 }
 
 .phonenumber {
-  width: 200px;
+  width: 150px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 12.089px;
   border: 1.511px solid #c4c4c4;
   background: #fff;
-  margin-left: -3rem;
+  margin-left: -2.4rem;
 }
 
 .relationship {
-  width: 200px;
+  width: 150px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 12.089px;
   border: 1.511px solid #c4c4c4;
   background: #fff;
-  margin-left: -3rem;
+  margin-left: -2.4rem;
 }
 
 .bvn-div{
@@ -2048,12 +2065,13 @@ line-height: normal;
 }
 
 .line2{
-  width: 220px;
-  margin-left: 50px;
+  width: 190px;
+  position: relative;
+  left: 1px;
 }
 
 .bvn {
-  margin-left: -7rem;
+  margin-left: -6rem;
   margin-bottom: -0rem;
   font-weight: 400;
   font-size: 15px;
@@ -2064,13 +2082,13 @@ line-height: normal;
 
 .bvn-input {
   margin-right: -6rem;
-  width: 200px;
+  width: 155px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 12.089px;
   border: 1.511px solid #c4c4c4;
   background: #fff;
-  margin-left: -3rem;
+  margin-left: -5rem;
 }
 
 .continue {
@@ -2090,12 +2108,93 @@ line-height: normal;
   margin-right: 5px;
   margin-bottom: -2rem;
   position: relative;
-  left: 22px;
+  left:10px;
 }
 
 .prev {
   margin-left: -4rem;
 }
+
+.view-text{
+  color: #726D6D;
+  background-color: white; 
+  padding:.5rem 1rem; 
+  margin: 10px 0;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+  margin: auto;
+  margin-top: 5px;
+  /* box-shadow: 5px 5px rgba(0, 0, 0, 0.04); */
+}
+
+.viewdelete-text{
+  color: rgb(227, 81, 81);
+  background-color: white; 
+  padding:.5rem 1rem; 
+  margin: 10px 0;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.back-link{
+  margin-right: 15rem;
+  font-size: 15.17px;
+  position: relative;
+  top: 5px;
+}
+
+.spend-description{
+  height: 90px;
+  color: #726D6D;
+  background-color: white; 
+  padding:.5rem 1rem; 
+  margin: 10px 0;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 18rem;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.nextspend-link{
+  margin-left: 15rem;
+  position: relative;
+  top: 6px;
+}
+
+.chat-p{
+  margin-right:7rem;
+}
+
+.email-p{
+  margin-right: 5rem;
+}
+
+.card-container{
+  display: flex;
+  margin: 25px 40px;
+  position: relative;
+  right: 15%;
+
+}
+
+
 
 
 }
