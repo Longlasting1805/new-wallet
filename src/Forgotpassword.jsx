@@ -25,7 +25,6 @@ export const Forgot = (props) => {
     const handleClose = () => setOpen(false);
 
    
-
 const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
