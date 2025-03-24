@@ -30,6 +30,7 @@ const handleSubmit = (e) => {
     console.log(email);
 }
 
+
 const navigate = useNavigate()
 
 return(
